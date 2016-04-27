@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Volumes/Storage/Git/TetrisOnCrack/android/build/intermediates/res/merged/debug/values/values.xml",
+        "outputFile": "/Volumes/Storage/Git/tetrisoncrack/android/build/intermediates/res/merged/debug/values/values.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 101
                 },
                 "from": {
-                    "file": "/Volumes/Storage/Git/TetrisOnCrack/android/res/values/strings.xml",
+                    "file": "/Volumes/Storage/Git/tetrisoncrack/android/res/values/strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -31,7 +31,7 @@
                     "endOffset": 564
                 },
                 "from": {
-                    "file": "/Volumes/Storage/Git/TetrisOnCrack/android/res/values/styles.xml",
+                    "file": "/Volumes/Storage/Git/tetrisoncrack/android/res/values/styles.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
