@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Volumes/Storage/Git/TetrisOnCrack/android/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1e53734cb7d424eaab3128bbd38ae9c5cd96e177">
+        <dex dex="/Volumes/Storage/Git/TetrisOnCrack/android/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_b1733cc989ef0f4bad50ee411561c8c30efc4794/classes.dex" />
+    </item>
+    <item
+        jar="/Volumes/Storage/Git/TetrisOnCrack/android/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="7fd012f6a54277785380ac29af4c5c33c9ed73f1">
+        <dex dex="/Volumes/Storage/Git/TetrisOnCrack/android/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_2a867e36867fa6dfda0ba94aeb4d1c4e1fc3c1f1/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Adam/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.2/e641cb91bec06bc64d9ddf7a7d7062caceec73cd/gdx-1.9.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="e641cb91bec06bc64d9ddf7a7d7062caceec73cd">
+        <dex dex="/Volumes/Storage/Git/TetrisOnCrack/android/build/intermediates/transforms/dex/debug/folders/1000/10/gdx-1.9.2_50028fd938a1cafd56f89ddb9257b087c8403ae1/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Adam/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-android/1.9.2/342b830bc718dc1965c8f13fc58dc500e8bd262f/gdx-backend-android-1.9.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="342b830bc718dc1965c8f13fc58dc500e8bd262f">
+        <dex dex="/Volumes/Storage/Git/TetrisOnCrack/android/build/intermediates/transforms/dex/debug/folders/1000/10/gdx-backend-android-1.9.2_ac2a5c7b38f97e9ba1828981854ad60eb0e6b36d/classes.dex" />
+    </item>
+
+</items>
