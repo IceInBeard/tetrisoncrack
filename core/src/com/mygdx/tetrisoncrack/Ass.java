@@ -20,4 +20,9 @@ public class Ass {
 
     }
 
+    // Convert RGB colors to this wiered system
+    static Color rgb(int r, int g, int b){
+        return new Color(r / 255f, g / 255f, b / 255f, 1.0f);
+    }
+
 }
