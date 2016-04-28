@@ -1,27 +1,67 @@
 package com.mygdx.tetrisoncrack;
 
-import com.badlogic.gdx.ApplicationAdapter;
+import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.math.Rectangle;
 
-public class TetrisOnCrack extends ApplicationAdapter {
+public class TetrisOnCrack extends Game {
 	SpriteBatch batch;
 	Texture img;
 	
 	@Override
 	public void create () {
-		batch = new SpriteBatch();
-		img = new Texture("badlogic.jpg");
+		Ass.load();
+		this.setScreen(new MenuScreen(this));
+
+		Gdx.input.setInputProcessor(new SimpleDirectionGestureDetector(new SimpleDirectionGestureDetector.DirectionListener() {
+
+			@Override
+			public void onUp() {
+				Gdx.app.log("MyTag", "Up");
+			}
+
+			@Override
+			public void onRight() {
+				Gdx.app.log("MyTag", "Right");
+
+
+			}
+
+			@Override
+			public void onLeft() {
+				Gdx.app.log("MyTag", "Left");
+
+
+			}
+
+			@Override
+			public void onDown() {
+
+				Gdx.app.log("MyTag", "Down");
+
+			}
+		}));
 	}
 
 	@Override
-	public void render () {
-		Gdx.gl.glClearColor(1, 0, 0, 1);
-		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-		batch.begin();
-		batch.draw(img, 0, 0);
-		batch.end();
+	public void dispose() {
+		// .dispose() on all the stuff;
+		// textures, sound, batch etc
+
+	}
+
+	@Override
+	public void resize(int width, int height) {
+	}
+
+	@Override
+	public void pause() {
+	}
+
+	@Override
+	public void resume() {
 	}
 }
