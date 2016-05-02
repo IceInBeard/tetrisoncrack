@@ -16,14 +16,18 @@ public class MenuScreen implements Screen {
     Vector3 touchPoint = new Vector3();
 
     OrthographicCamera cam;
-    Sprite mm_sprite;
+    Sprite mainMenu_sprite;
     Game game;
 
     public MenuScreen(Game game) {
         this.game = game;
+        Sprite mainMenu_sprite;
 
         cam = new OrthographicCamera();
         cam.setToOrtho(false, 800, 480);
+
+        mainMenu_sprite = new Sprite(Ass.menuScreen);
+        mainMenu_sprite.setPosition(0, 0);
 
     }
 
@@ -31,7 +35,13 @@ public class MenuScreen implements Screen {
     public void render(float delta) {
         Gdx.gl.glClearColor(135/255f, 206/255f, 235/255f, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+
+        batch.setProjectionMatrix(cam.combined);
         batch.begin();
+
+        batch.draw(mainMenu_sprite, 0, 0);
+
+
         batch.end();
 
     }

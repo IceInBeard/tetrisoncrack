@@ -15,8 +15,17 @@ package com.mygdx.tetrisoncrack;
 
 public class Ass {
 
+    public static TextureRegion menuScreen;
+
+
     // Load assets
     public static void load(){
+
+        Texture menuScreenTexture;
+        menuScreenTexture = new Texture(Gdx.files.internal("main-screen.png"));
+
+
+        menuScreen = new TextureRegion(menuScreenTexture, 0, 0, 800, 480);
 
     }
 
