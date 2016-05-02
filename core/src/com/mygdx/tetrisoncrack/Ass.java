@@ -23,7 +23,7 @@ public class Ass {
 
         Texture menuScreenTexture;
 
-        menuScreenTexture = new Texture(Gdx.files.internal("main-screen.png"));
+        menuScreenTexture = new Texture(Gdx.files.internal("TOC-screen.png"));
         menuScreenTexture.setFilter(TextureFilter.Linear, TextureFilter.Linear);
 
             menuScreen = new TextureRegion(menuScreenTexture, 0, 0, 480, 800);
