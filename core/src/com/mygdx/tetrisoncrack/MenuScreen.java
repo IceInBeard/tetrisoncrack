@@ -21,10 +21,9 @@ public class MenuScreen implements Screen {
 
     public MenuScreen(Game game) {
         this.game = game;
-        Sprite mainMenu_sprite;
 
         cam = new OrthographicCamera();
-        cam.setToOrtho(false, 800, 480);
+        cam.setToOrtho(false, 480, 800);
 
         mainMenu_sprite = new Sprite(Ass.menuScreen);
         mainMenu_sprite.setPosition(0, 0);

@@ -22,11 +22,11 @@ public class Ass {
     public static void load(){
 
         Texture menuScreenTexture;
+
         menuScreenTexture = new Texture(Gdx.files.internal("main-screen.png"));
+        menuScreenTexture.setFilter(TextureFilter.Linear, TextureFilter.Linear);
 
-
-        menuScreen = new TextureRegion(menuScreenTexture, 0, 0, 800, 480);
-
+            menuScreen = new TextureRegion(menuScreenTexture, 0, 0, 480, 800);
     }
 
     // Convert RGB colors to this wiered system
