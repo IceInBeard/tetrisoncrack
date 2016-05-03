@@ -4,26 +4,26 @@
     api-level="22"
     density="xxhdpi"
     format="7"
-    timestamp="29211147523041" >
+    timestamp="32858871080747" >
 
     <task
         name="javac"
-        duration="152" />
+        duration="61" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="61" />
+        duration="85" />
     <task
         name="verifier"
-        duration="20" />
+        duration="13" />
 
     <artifact
         location="/Volumes/Storage/Git/tetrisoncrack/android/build/outputs/apk/android-debug.apk"
         type="MAIN" />
 
-    <build timestamp="29211147523041" >
+    <build timestamp="32858871080747" >
         <artifact
             location="/Volumes/Storage/Git/tetrisoncrack/android/build/outputs/apk/android-debug.apk"
             type="MAIN" />

@@ -15,8 +15,8 @@ package com.mygdx.tetrisoncrack;
 
 public class Ass {
 
-    public static TextureRegion menuScreen , gameScreen;
-    public static Rectangle menuScreenStartButton;
+    public static TextureRegion menuScreen , gameScreen, pauseScreen;
+    public static Rectangle menuScreenStartButton , gamePauseButton, pauseScreenMenuButton;
 
 
     // Load assets
@@ -32,11 +32,26 @@ public class Ass {
         // May implement Stage and Actors?
         menuScreenStartButton = new Rectangle(50, 410, 380, 90);
 
+        // Background for pause screen
+        Texture pauseScreenTexture;
+        pauseScreenTexture = new Texture(Gdx.files.internal("TetrisOnCrack-pausemenu.png"));
+        pauseScreenTexture.setFilter(TextureFilter.Linear, TextureFilter.Linear);
+        pauseScreen = new TextureRegion(pauseScreenTexture, 0, 0, 480, 800);
+
+        // We have the buttons on the background so we make a clickable rectangle
+        // May implement Stage and Actors?
+        pauseScreenMenuButton = new Rectangle(50, 90, 380, 90);
+
+
         // Background for game screen
         Texture gameScreenTexture;
         gameScreenTexture = new Texture(Gdx.files.internal("TetrisOnCrack-spelplan.png"));
         gameScreenTexture.setFilter(TextureFilter.Linear, TextureFilter.Linear);
         gameScreen = new TextureRegion(gameScreenTexture, 0, 0, 480, 800);
+
+        // We have the buttons on the background so we make a clickable rectangle
+        // May implement Stage and Actors?
+        gamePauseButton = new Rectangle(390, 10, 80, 80);
 
     }
 

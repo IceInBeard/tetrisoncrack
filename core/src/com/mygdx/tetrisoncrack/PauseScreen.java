@@ -3,30 +3,30 @@ package com.mygdx.tetrisoncrack;
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector3;
 
 
-public class TetrisScreen implements Screen {
+public class PauseScreen implements Screen {
 
     SpriteBatch batch = new SpriteBatch();
     Vector3 touchPoint = new Vector3();
 
     OrthographicCamera cam;
-    Sprite game_sprite;
+    Sprite pauseMenu_sprite;
     Game game;
 
-    public TetrisScreen(Game game) {
-
+    public PauseScreen(Game game) {
         this.game = game;
 
         cam = new OrthographicCamera();
         cam.setToOrtho(false, 480, 800);
 
-        game_sprite = new Sprite(Ass.gameScreen);
-        game_sprite.setPosition(0, 0);
+        pauseMenu_sprite = new Sprite(Ass.pauseScreen);
+        pauseMenu_sprite.setPosition(0, 0);
 
     }
 
@@ -40,20 +40,23 @@ public class TetrisScreen implements Screen {
         return r.contains(touchPoint.x, touchPoint.y);
     }
 
-
     @Override
     public void render(float delta) {
 
         // We have the buttons on the background so we make a clickable rectangle
         // May implement Stage, Actors and event listeners?
-        if (pushed(Ass.gamePauseButton)){
-            game.setScreen(new PauseScreen(game));
+        if (pushed(Ass.pauseScreenMenuButton)){
+            game.setScreen(new MenuScreen(game));
         }
+
+        // Add background color
+        Gdx.gl.glClearColor(135/255f, 206/255f, 235/255f, 1);
+        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
         batch.setProjectionMatrix(cam.combined);
         batch.begin();
 
-        batch.draw(game_sprite, 0, 0);
+        batch.draw(pauseMenu_sprite, 0, 0);
 
 
         batch.end();
@@ -62,33 +65,38 @@ public class TetrisScreen implements Screen {
 
     @Override
     public void resize(int width, int height) {
+        // TODO Auto-generated method stub
 
     }
 
     @Override
     public void show() {
+        // TODO Auto-generated method stub
 
     }
 
     @Override
     public void hide() {
+        // TODO Auto-generated method stub
 
     }
 
     @Override
     public void pause() {
+        // TODO Auto-generated method stub
 
     }
 
     @Override
     public void resume() {
+        // TODO Auto-generated method stub
 
     }
 
     @Override
     public void dispose() {
+        // TODO Auto-generated method stub
 
     }
 
 }
-
