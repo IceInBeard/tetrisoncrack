@@ -30,12 +30,11 @@ public class MenuScreen implements Screen {
 
     }
 
+    // We have the buttons on the background so we make a clickable rectangle
+    // May implement Stage, Actors and event listeners?
     boolean pushed(com.badlogic.gdx.math.Rectangle r){
         if (!Gdx.input.justTouched())
             return false;
-
-        // If this could possibly be slow, I could move it t...
-        // It won't be slow
         cam.unproject(touchPoint.set(Gdx.input.getX(), Gdx.input.getY(), 0));
 
         return r.contains(touchPoint.x, touchPoint.y);
@@ -44,11 +43,13 @@ public class MenuScreen implements Screen {
     @Override
     public void render(float delta) {
 
+        // We have the buttons on the background so we make a clickable rectangle
+        // May implement Stage, Actors and event listeners?
         if (pushed(Ass.menuScreenStartButton)){
-            Gdx.app.log("MyTag", "Klick");
             game.setScreen(new TetrisScreen(game));
         }
 
+        // Add background color
         Gdx.gl.glClearColor(135/255f, 206/255f, 235/255f, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
