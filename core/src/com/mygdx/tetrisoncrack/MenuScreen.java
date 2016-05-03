@@ -30,8 +30,25 @@ public class MenuScreen implements Screen {
 
     }
 
+    boolean pushed(com.badlogic.gdx.math.Rectangle r){
+        if (!Gdx.input.justTouched())
+            return false;
+
+        // If this could possibly be slow, I could move it t...
+        // It won't be slow
+        cam.unproject(touchPoint.set(Gdx.input.getX(), Gdx.input.getY(), 0));
+
+        return r.contains(touchPoint.x, touchPoint.y);
+    }
+
     @Override
     public void render(float delta) {
+
+        if (pushed(Ass.menuScreenStartButton)){
+            Gdx.app.log("MyTag", "Klick");
+            game.setScreen(new TetrisScreen(game));
+        }
+
         Gdx.gl.glClearColor(135/255f, 206/255f, 235/255f, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 

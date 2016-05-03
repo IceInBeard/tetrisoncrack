@@ -15,18 +15,25 @@ package com.mygdx.tetrisoncrack;
 
 public class Ass {
 
-    public static TextureRegion menuScreen;
+    public static TextureRegion menuScreen , gameScreen;
+    public static Rectangle menuScreenStartButton;
 
 
     // Load assets
     public static void load(){
 
         Texture menuScreenTexture;
-
-        menuScreenTexture = new Texture(Gdx.files.internal("TOC-screen.png"));
+        menuScreenTexture = new Texture(Gdx.files.internal("TetrisOnCrack-mainmenu.png"));
         menuScreenTexture.setFilter(TextureFilter.Linear, TextureFilter.Linear);
+        menuScreen = new TextureRegion(menuScreenTexture, 0, 0, 480, 800);
 
-            menuScreen = new TextureRegion(menuScreenTexture, 0, 0, 480, 800);
+        menuScreenStartButton = new Rectangle(50, 410, 380, 90);
+
+        Texture gameScreenTexture;
+        gameScreenTexture = new Texture(Gdx.files.internal("TetrisOnCrack-spelplan.png"));
+        gameScreenTexture.setFilter(TextureFilter.Linear, TextureFilter.Linear);
+        gameScreen = new TextureRegion(gameScreenTexture, 0, 0, 480, 800);
+
     }
 
     // Convert RGB colors to this wiered system

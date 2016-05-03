@@ -1,2 +1,0 @@
-CHANGED,/Volumes/Storage/Git/tetrisoncrack/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/mygdx/tetrisoncrack/Ass$override.class
-CHANGED,/Volumes/Storage/Git/tetrisoncrack/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class
