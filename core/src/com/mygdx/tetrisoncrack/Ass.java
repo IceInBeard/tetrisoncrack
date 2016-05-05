@@ -17,7 +17,7 @@ public class Ass {
 
     public static TextureRegion menuScreen , gameScreen, pauseScreen, blockTextureRegion;
     public static Rectangle tetrisScreenGrid, menuScreenStartButton , gamePauseButton, pauseScreenMenuButton;
-    public static Color black;
+    public static Color black, white, green;
 
     // Load assets
     public static void load(){
@@ -53,22 +53,23 @@ public class Ass {
         // May implement Stage and Actors?
         gamePauseButton = new Rectangle(390, 10, 80, 80);
 
-        // The area where the blocks are falling and stuff
-        tetrisScreenGrid = new Rectangle(40, 20, 340, 660);
-
+        // The grid (size of one block)
+        tetrisScreenGrid = new Rectangle(40, 20, 34, 34);
 
         //
         // Block colors (might change, more to come)
         //
 
         black = rgb(0,0,0);
+        white = rgb(255,255,255);
+        green = rgb(0,255,0);
 
         // Block texture
         Texture blockTexture;
         blockTexture = new Texture(Gdx.files.internal("block.png"));
         blockTexture.setFilter(TextureFilter.Linear, TextureFilter.Linear);
 
-        blockTextureRegion = new TextureRegion(blockTexture, 1, 1, 34, 34);
+        blockTextureRegion = new TextureRegion(blockTexture, 0, 0, 34, 34);
 
 
     }

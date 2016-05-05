@@ -59,10 +59,13 @@ public class TetrisScreen implements Screen {
         block_sprite.setPosition(0, 0);
 
         // JUST FOR TESTING: Added some random blocks
-        grid[5][5] = 1;
-        grid[5][6] = 1;
-        grid[5][7] = 1;
-        grid[6][6] = 1;
+        grid[0][0] = 1;
+        grid[0][9] = 1;
+        grid[19][0] = 1;
+        grid[19][9] = 1;
+
+        grid[9][5] = 1;
+        grid[9][4] = 1;
 
 
     }
@@ -122,6 +125,8 @@ public class TetrisScreen implements Screen {
         batch.setProjectionMatrix(cam.combined);
         batch.begin();
 
+        batch.setColor(Ass.white);
+
         state.draw();
         state.update(delta);
 
@@ -133,7 +138,7 @@ public class TetrisScreen implements Screen {
 
         batch.draw(game_sprite,  0,  0);
 
-        //drawBlocks(grid, Ass.tetrisScreenGrid, 0, 0);
+        drawBlocks(grid, Ass.tetrisScreenGrid, 0, 0);
 
     }
 
@@ -144,17 +149,21 @@ public class TetrisScreen implements Screen {
 
         batch.setTransformMatrix(grid_scale);
 
-        batch.setColor(Ass.black);
+        batch.setColor(Ass.green);
 
         for(int i = 0; i < blocks.length; i++){
             for(int j = 0; j < blocks[i].length; j++){
                 // Need to be expanded to take more colors than 1
                 if(blocks[i][j] == 1 && y + i < GRID_HEIGHT - 2){
+                   // Gdx.app.log("Draw blocks", "i/j " + i + "/" + j);
+
                     batch.draw(
                             block_sprite,
                             BLOCK_SIZE * (x + j),
                             BLOCK_SIZE * (y + i));
                 }
+
+
             }
         }
 

@@ -1,0 +1,4 @@
+CHANGED,D:\Git\tetrisoncrack\android\build\intermediates\transforms\instantRun\debug\folders\1\5\main\com\mygdx\tetrisoncrack\TetrisScreen$PlayState.class
+CHANGED,D:\Git\tetrisoncrack\android\build\intermediates\transforms\instantRun\debug\folders\1\5\main\com\mygdx\tetrisoncrack\TetrisScreen$PauseState.class
+CHANGED,D:\Git\tetrisoncrack\android\build\intermediates\transforms\instantRun\debug\folders\1\5\main\com\mygdx\tetrisoncrack\TetrisScreen.class
+CHANGED,D:\Git\tetrisoncrack\android\build\intermediates\transforms\instantRun\debug\folders\1\5\main\com\mygdx\tetrisoncrack\Ass.class
