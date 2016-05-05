@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Adam\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-box2d\1.9.2\b78eaa90aaaf7830e6dffff587ea6e859c2787b2\gdx-box2d-1.9.2.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="b78eaa90aaaf7830e6dffff587ea6e859c2787b2">
+        <dex dex="D:\Git\tetrisoncrack\TetrisOnCrack\android\build\intermediates\transforms\dex\debug\folders\1000\10\gdx-box2d-1.9.2_ae37b7cc228c364c24d505f0ffabea9d0b4717ae\classes.dex" />
+    </item>
+    <item
+        jar="D:\Git\tetrisoncrack\TetrisOnCrack\android\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="3c1a3752557af556f864df2d595f72ceb0218b9b">
+        <dex dex="D:\Git\tetrisoncrack\TetrisOnCrack\android\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_bf36dd30919ca9a99e70682fdf9c29e90882a67d\classes.dex" />
+    </item>
+    <item
+        jar="D:\Git\tetrisoncrack\TetrisOnCrack\android\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="0372d6686e1872dac4fac71787ae8e1103ad383c">
+        <dex dex="D:\Git\tetrisoncrack\TetrisOnCrack\android\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_d34d7e7efb8f296d88a14ade764ef5b84b1b1af0\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Adam\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx\1.9.2\e641cb91bec06bc64d9ddf7a7d7062caceec73cd\gdx-1.9.2.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="e641cb91bec06bc64d9ddf7a7d7062caceec73cd">
+        <dex dex="D:\Git\tetrisoncrack\TetrisOnCrack\android\build\intermediates\transforms\dex\debug\folders\1000\10\gdx-1.9.2_c8ef8e2a05792b16736ecc86524c7d31dd1f73be\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Adam\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-backend-android\1.9.2\342b830bc718dc1965c8f13fc58dc500e8bd262f\gdx-backend-android-1.9.2.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="342b830bc718dc1965c8f13fc58dc500e8bd262f">
+        <dex dex="D:\Git\tetrisoncrack\TetrisOnCrack\android\build\intermediates\transforms\dex\debug\folders\1000\10\gdx-backend-android-1.9.2_262837c0ad51744ccb25b1cd3fd61c7e05e37976\classes.dex" />
+    </item>
+
+</items>
