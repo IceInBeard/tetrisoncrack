@@ -5,6 +5,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector3;
@@ -19,6 +20,7 @@ public class MenuScreen implements Screen {
     Sprite mainMenu_sprite;
     Game game;
 
+
     public MenuScreen(Game game) {
         this.game = game;
 
@@ -27,6 +29,7 @@ public class MenuScreen implements Screen {
 
         mainMenu_sprite = new Sprite(Ass.menuScreen);
         mainMenu_sprite.setPosition(0, 0);
+
 
     }
 
@@ -57,6 +60,7 @@ public class MenuScreen implements Screen {
         batch.begin();
 
         batch.draw(mainMenu_sprite, 0, 0);
+
 
 
         batch.end();

@@ -4,6 +4,7 @@ import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Matrix4;
@@ -30,6 +31,9 @@ public class TetrisScreen implements Screen {
     Sprite game_sprite, block_sprite;
     Game game;
     GameState state;
+
+    Animation penguinAnimation;
+    float elapsedTime;
 
     // Using different game states
     // so we can pause the game for example
@@ -58,6 +62,8 @@ public class TetrisScreen implements Screen {
         block_sprite = new Sprite(Ass.blockTextureRegion);
         block_sprite.setPosition(0, 0);
 
+        penguinAnimation = new Animation(1f/4f, Ass.penguinAnimationRegion);
+
         // JUST FOR TESTING: Added some random blocks
         grid[0][0] = 1;
         grid[0][9] = 1;
@@ -80,6 +86,9 @@ public class TetrisScreen implements Screen {
             if(pushed(Ass.gamePauseButton)){
                 state = new PauseState(PlayState.this);
             }
+
+            elapsedTime += delta;
+            batch.draw(penguinAnimation.getKeyFrame(elapsedTime,true) ,150, 695);
         }
     }
 
@@ -140,6 +149,7 @@ public class TetrisScreen implements Screen {
 
         drawBlocks(grid, Ass.tetrisScreenGrid, 0, 0);
 
+
     }
 
     void drawBlocks(int[][] blocks, Rectangle gridRectangle, int x, int y){
@@ -149,7 +159,7 @@ public class TetrisScreen implements Screen {
 
         batch.setTransformMatrix(grid_scale);
 
-        batch.setColor(Ass.green);
+
 
         for(int i = 0; i < blocks.length; i++){
             for(int j = 0; j < blocks[i].length; j++){

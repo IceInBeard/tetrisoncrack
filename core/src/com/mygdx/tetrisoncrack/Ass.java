@@ -16,14 +16,16 @@ package com.mygdx.tetrisoncrack;
 public class Ass {
 
     public static TextureRegion menuScreen , gameScreen, pauseScreen, blockTextureRegion;
+    public static TextureRegion[] penguinAnimationRegion;
     public static Rectangle tetrisScreenGrid, menuScreenStartButton , gamePauseButton, pauseScreenMenuButton;
     public static Color black, white, green;
+    public static Texture menuScreenTexture, pauseScreenTexture, gameScreenTexture, blockTexture, penguinImg;
+
 
     // Load assets
     public static void load(){
 
         // Background for main menu
-        Texture menuScreenTexture;
         menuScreenTexture = new Texture(Gdx.files.internal("TetrisOnCrack-mainmenu.png"));
         menuScreenTexture.setFilter(TextureFilter.Linear, TextureFilter.Linear);
         menuScreen = new TextureRegion(menuScreenTexture, 0, 0, 480, 800);
@@ -33,7 +35,6 @@ public class Ass {
         menuScreenStartButton = new Rectangle(50, 410, 380, 90);
 
         // Background for pause screen
-        Texture pauseScreenTexture;
         pauseScreenTexture = new Texture(Gdx.files.internal("TetrisOnCrack-pausemenu.png"));
         pauseScreenTexture.setFilter(TextureFilter.Linear, TextureFilter.Linear);
         pauseScreen = new TextureRegion(pauseScreenTexture, 0, 0, 480, 800);
@@ -44,7 +45,6 @@ public class Ass {
 
 
         // Background for game screen
-        Texture gameScreenTexture;
         gameScreenTexture = new Texture(Gdx.files.internal("TetrisOnCrack-spelplan.png"));
         gameScreenTexture.setFilter(TextureFilter.Linear, TextureFilter.Linear);
         gameScreen = new TextureRegion(gameScreenTexture, 0, 0, 480, 800);
@@ -65,11 +65,22 @@ public class Ass {
         green = rgb(0,255,0);
 
         // Block texture
-        Texture blockTexture;
         blockTexture = new Texture(Gdx.files.internal("block.png"));
         blockTexture.setFilter(TextureFilter.Linear, TextureFilter.Linear);
 
         blockTextureRegion = new TextureRegion(blockTexture, 0, 0, 34, 34);
+
+
+        // Splits the penguin sprites into a texture region array
+        penguinImg = new Texture(Gdx.files.internal("PenguinSprite_256.png"));
+        penguinAnimationRegion = new TextureRegion[4];
+        TextureRegion[][] penguinFrameSplitter = TextureRegion.split(penguinImg,128,128);
+
+        penguinAnimationRegion[0] = penguinFrameSplitter[0][0]; // Expressionless
+        penguinAnimationRegion[1] = penguinFrameSplitter[0][1]; // Standard arms upp
+        penguinAnimationRegion[2] = penguinFrameSplitter[1][0]; // Pooping
+        penguinAnimationRegion[3] = penguinFrameSplitter[1][1]; // Happy
+
 
 
     }
