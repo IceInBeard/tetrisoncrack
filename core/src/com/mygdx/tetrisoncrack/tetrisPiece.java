@@ -10,7 +10,7 @@ public class tetrisPiece {
         // Initial position for piece measured in the grid system from bottom left (starting at 0, not 1)
         // refers to bottom left in pieceGrid
         x = 4;
-        y = 19 ;
+        y = 18 ;
 
         type = pieceType;
         // Shape of the piece
