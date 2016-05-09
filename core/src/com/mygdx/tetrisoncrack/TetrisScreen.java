@@ -24,6 +24,9 @@ public class TetrisScreen implements Screen {
     // 340 px the width of the area of the tetrisScreenGrid
     final int BLOCK_SIZE = 34;
 
+    // Time between each tick in the game (like for example when block moves down)
+    final float TICK_TIME = 1;
+
     SpriteBatch batch = new SpriteBatch();
     Vector3 touchPoint = new Vector3();
 
@@ -31,7 +34,10 @@ public class TetrisScreen implements Screen {
     Sprite game_sprite, block_sprite;
     Game game;
     GameState state;
+    tetrisPiece currentPiece, nextPiece, nextNextPiece, heldPiece;
+    float timeSinceLastTic;
 
+    // For the penguin animation (animation needs an elaspedTime variable
     Animation penguinAnimation;
     float elapsedTime;
 
@@ -64,6 +70,9 @@ public class TetrisScreen implements Screen {
 
         penguinAnimation = new Animation(1f/4f, Ass.penguinAnimationRegion);
 
+        heldPiece = new tetrisPiece(1);
+        timeSinceLastTic = 0;
+
         // JUST FOR TESTING: Added some random blocks
         grid[0][0] = 1;
         grid[0][9] = 1;
@@ -76,7 +85,8 @@ public class TetrisScreen implements Screen {
 
     }
 
-    class PlayState implements GameState {
+      class PlayState implements GameState {
+
 
         public void draw(){
             drawGame();
@@ -84,12 +94,36 @@ public class TetrisScreen implements Screen {
 
         public void update(float delta){
             if(pushed(Ass.gamePauseButton)){
-                state = new PauseState(PlayState.this);
+                // state = new PauseState(PlayState.this);
             }
+
+            if(currentPiece == null) {
+                spawnPieceOnGrid();
+            }
+
+            timeSinceLastTic+=delta;
+
+            if(timeSinceLastTic >= TICK_TIME){
+                // THIS IS WHERE THE TICK HAPPENS! PARTY!
+
+                currentPiece.movePieceDown();
+
+                timeSinceLastTic = 0;
+            }
+
 
             elapsedTime += delta;
             batch.draw(penguinAnimation.getKeyFrame(elapsedTime,true) ,150, 695);
         }
+
+        void spawnPieceOnGrid(){
+            currentPiece = new tetrisPiece(1);
+
+           /* currentPiece = nextPiece;
+            nextPiece = nextNextPiece;
+            nextNextPiece = new tetrisPiece(1); */
+        }
+
     }
 
     class PauseState implements GameState {
@@ -116,6 +150,7 @@ public class TetrisScreen implements Screen {
 
         }
     }
+
 
     // We have the buttons on the background so we make a clickable rectangle
     // May implement Stage, Actors and event listeners?
@@ -149,7 +184,10 @@ public class TetrisScreen implements Screen {
 
         drawBlocks(grid, Ass.tetrisScreenGrid, 0, 0);
 
+        if(currentPiece != null) {
 
+            drawBlocks(currentPiece.pieceGrid, Ass.tetrisScreenGrid, currentPiece.x, currentPiece.y);
+        }
     }
 
     void drawBlocks(int[][] blocks, Rectangle gridRectangle, int x, int y){
