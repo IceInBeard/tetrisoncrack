@@ -25,16 +25,23 @@ public class TetrisScreen implements Screen {
     final int BLOCK_SIZE = 34;
 
     // Time between each tick in the game (like for example when block moves down)
-    final float TICK_TIME = 1;
+    float TICK_TIME = 1;
 
+    // Handles the thingimajigg that prints things to the screen
     SpriteBatch batch = new SpriteBatch();
+
+    // Handles user input on the screen
     Vector3 touchPoint = new Vector3();
 
     OrthographicCamera cam;
+
     Sprite game_sprite, block_sprite;
+
     Game game;
     GameState state;
+
     tetrisPiece currentPiece, nextPiece, nextNextPiece, heldPiece;
+
     float timeSinceLastTic;
 
     // For the penguin animation (animation needs an elaspedTime variable
@@ -70,7 +77,6 @@ public class TetrisScreen implements Screen {
 
         penguinAnimation = new Animation(1f/4f, Ass.penguinAnimationRegion);
 
-        heldPiece = new tetrisPiece(1);
         timeSinceLastTic = 0;
 
         // JUST FOR TESTING: Added some random blocks
@@ -94,13 +100,14 @@ public class TetrisScreen implements Screen {
 
         public void update(float delta){
             if(pushed(Ass.gamePauseButton)){
-                // state = new PauseState(PlayState.this);
+                 state = new PauseState(PlayState.this);
             }
 
             if(currentPiece == null) {
                 spawnPieceOnGrid();
             }
 
+            TICK_TIME = 0.5f;
             timeSinceLastTic+=delta;
 
             if(timeSinceLastTic >= TICK_TIME){
@@ -111,13 +118,13 @@ public class TetrisScreen implements Screen {
                 timeSinceLastTic = 0;
             }
 
-
+            // Draw the penguin animation
             elapsedTime += delta;
             batch.draw(penguinAnimation.getKeyFrame(elapsedTime,true) ,150, 695);
         }
 
         void spawnPieceOnGrid(){
-            currentPiece = new tetrisPiece(1);
+            currentPiece = new tetrisPiece(4);
 
            /* currentPiece = nextPiece;
             nextPiece = nextNextPiece;
@@ -128,6 +135,7 @@ public class TetrisScreen implements Screen {
 
     class PauseState implements GameState {
         GameState returnState;
+
         public PauseState(GameState returnState){
             this.returnState = returnState;
         }
@@ -185,20 +193,19 @@ public class TetrisScreen implements Screen {
         drawBlocks(grid, Ass.tetrisScreenGrid, 0, 0);
 
         if(currentPiece != null) {
-
             drawBlocks(currentPiece.pieceGrid, Ass.tetrisScreenGrid, currentPiece.x, currentPiece.y);
         }
     }
 
     void drawBlocks(int[][] blocks, Rectangle gridRectangle, int x, int y){
 
+        // Used to scale the block size and position to fit within the rectangle
         Matrix4 grid_scale = new Matrix4();
         grid_scale.setToTranslationAndScaling(gridRectangle.x, gridRectangle.y, 0.0f, gridRectangle.width / BLOCK_SIZE, gridRectangle.height / BLOCK_SIZE, 1.0f);
-
         batch.setTransformMatrix(grid_scale);
 
 
-
+        // Go through the grid and print a block on all elements with 1s in them
         for(int i = 0; i < blocks.length; i++){
             for(int j = 0; j < blocks[i].length; j++){
                 // Need to be expanded to take more colors than 1

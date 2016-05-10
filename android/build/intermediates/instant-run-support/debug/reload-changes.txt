@@ -1,2 +1,0 @@
-CHANGED,D:\Git\tetrisoncrack\android\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\mygdx\tetrisoncrack\tetrisPiece$override.class
-CHANGED,D:\Git\tetrisoncrack\android\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class

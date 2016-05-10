@@ -7,6 +7,8 @@ import com.mygdx.tetrisoncrack.TetrisOnCrack;
 public class DesktopLauncher {
 	public static void main (String[] arg) {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
+		config.height = 800;
+		config.width = 480;
 		new LwjglApplication(new TetrisOnCrack(), config);
 	}
 }
