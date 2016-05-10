@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="armeabi-v7a,armeabi"
-    api-level="23"
+    abi="x86_64"
+    api-level="22"
     density="xxhdpi"
     format="7"
-    timestamp="8070228767615" >
+    timestamp="12908894592857" >
 
     <task
         name="javac"
-        duration="116" />
+        duration="252" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="69" />
+        duration="161" />
     <task
         name="verifier"
-        duration="11" />
+        duration="32" />
 
     <artifact
         location="/Volumes/Storage/Git/tetrisoncrack/android/build/outputs/apk/android-debug.apk"
         type="MAIN" />
 
-    <build timestamp="8070228767615" >
+    <build timestamp="12908894592857" >
         <artifact
             location="/Volumes/Storage/Git/tetrisoncrack/android/build/outputs/apk/android-debug.apk"
             type="MAIN" />

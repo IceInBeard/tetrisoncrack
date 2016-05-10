@@ -5,7 +5,7 @@
         jar="/Volumes/Storage/Git/tetrisoncrack/android/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="addbebf7102f708e588eca11a5cfeb50b1b52b80">
+        sha1="9905375bc2b81c3de12e73d6c686fce40f4709b4">
         <dex dex="/Volumes/Storage/Git/tetrisoncrack/android/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_7b1658a5a1f3336fa8347f06139e2aca4f5b3300/classes.dex" />
     </item>
     <item
@@ -26,7 +26,7 @@
         jar="/Volumes/Storage/Git/tetrisoncrack/android/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="7288c58bb991ede84080e41c9ce833718c797eb9">
+        sha1="cbc258305ccd795e680e7ee46371c4d4161374e1">
         <dex dex="/Volumes/Storage/Git/tetrisoncrack/android/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_740be46ac04b789d56c22413386630c52a496db6/classes.dex" />
     </item>
 
