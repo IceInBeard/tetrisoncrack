@@ -31,4 +31,19 @@ public class tetrisPiece {
     void movePieceLeft(){
         x -= 1;
     }
+
+    // Rotates the piece
+    void rotate(){
+
+        // Create a new "rotated" piece
+        int[][] new_grid = new int[pieceGrid.length][pieceGrid[0].length];
+
+        for(int i = 0; i < pieceGrid.length; i++){
+            for(int j = 0; j < pieceGrid.length; j++){
+                new_grid[j][pieceGrid.length - 1 - i] = pieceGrid[i][j];
+            }
+        }
+        // Replace the grid with the new grid
+        pieceGrid = new_grid;
+    }
 }

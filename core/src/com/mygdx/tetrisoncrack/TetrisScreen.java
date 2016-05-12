@@ -10,6 +10,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Matrix4;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.math.Rectangle;
+import java.util.Random;
 
 
 public class TetrisScreen implements Screen {
@@ -43,6 +44,8 @@ public class TetrisScreen implements Screen {
     tetrisPiece currentPiece, nextPiece, nextNextPiece, heldPiece;
 
     float timeSinceLastTic;
+
+    Random randomPieceGenerator;
 
     // For the penguin animation (animation needs an elaspedTime variable
     Animation penguinAnimation;
@@ -96,6 +99,8 @@ public class TetrisScreen implements Screen {
             @Override
             public void onUp() {
                 Gdx.app.log("MyTag", "Up");
+
+                currentPiece.rotate();
             }
 
             @Override
@@ -155,6 +160,10 @@ public class TetrisScreen implements Screen {
                 if(!collidesWithGridOrWall(currentPiece.pieceGrid, currentPiece.x, currentPiece.y - 1)) {
                     currentPiece.movePieceDown();
                 }
+                else {
+                    pieceToGrid();
+                    spawnPieceOnGrid();
+                }
 
                 timeSinceLastTic = 0;
             }
@@ -169,12 +178,40 @@ public class TetrisScreen implements Screen {
 
 
         void spawnPieceOnGrid(){
-            currentPiece = new tetrisPiece(0);
+            randomPieceGenerator = new Random();
+            int randomPieceNumber;
 
-           /* currentPiece = nextPiece;
+            // Generate next and nextnext blocks on first go
+            if(currentPiece == null){
+                // Generate a random number 0 to 6 (the different piecetypes)
+                randomPieceNumber = randomPieceGenerator.nextInt(7);
+                nextPiece = new tetrisPiece(randomPieceNumber);
+
+                // Generate a new random number 0 to 6 (the different piecetypes)
+                randomPieceNumber = randomPieceGenerator.nextInt(7);
+                nextNextPiece = new tetrisPiece(randomPieceNumber);
+
+
+            }
+
+            // Generate a random number 0 to 6 (the different piecetypes)
+            randomPieceNumber = randomPieceGenerator.nextInt(7);
+
+            currentPiece = nextPiece;
             nextPiece = nextNextPiece;
-            nextNextPiece = new tetrisPiece(1); */
+            nextNextPiece = new tetrisPiece(randomPieceNumber);
         }
+
+      void pieceToGrid(){
+          int size = currentPiece.pieceGrid.length;
+          for(int i = 0; i < size; i++){
+              for(int j = 0; j < size; j++){
+                  if(currentPiece.pieceGrid[i][j] == 1){
+                      grid[currentPiece.y + i][currentPiece.x + j] = 1;
+                  }
+              }
+          }
+      }
 
     }
 
