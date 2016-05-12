@@ -27,7 +27,10 @@ public class TetrisScreen implements Screen {
     final int BLOCK_SIZE = 34;
 
     // Time between each tick in the game (like for example when block moves down)
-    float TICK_TIME = 0.5f;
+    final float TICK_TIME = 1;
+    float tickTimeModifier = 3; // Should increase with every level
+
+    final int POINTS_PER_ROW = 10;
 
     // Handles the thingimajigg that prints things to the screen
     SpriteBatch batch = new SpriteBatch();
@@ -46,7 +49,8 @@ public class TetrisScreen implements Screen {
 
     float timeSinceLastTic;
 
-    int rows;
+    int rows = 0;
+    int score = 0;
 
     Random randomPieceGenerator;
 
@@ -87,14 +91,6 @@ public class TetrisScreen implements Screen {
 
         timeSinceLastTic = 0;
 
-        // JUST FOR TESTING: Added some random blocks
-        grid[0][0] = 1;
-        grid[0][9] = 1;
-        grid[19][0] = 1;
-        grid[19][9] = 1;
-
-        grid[9][5] = 1;
-        grid[9][4] = 1;
 
         /*
         /   Touch control
@@ -143,6 +139,10 @@ public class TetrisScreen implements Screen {
 
       class PlayState implements GameState {
 
+      public void PlayState(){
+
+      }
+
 
         public void draw(){
             drawGame();
@@ -157,10 +157,16 @@ public class TetrisScreen implements Screen {
                 spawnPieceOnGrid();
             }
 
+            // Check if Game over
+            if(collidesWithGridOrWall(currentPiece.pieceGrid, currentPiece.x, currentPiece.y)){
+                Gdx.app.log("GameOver","Game Over");
+                state = new GameOverState();
+            }
+
 
             timeSinceLastTic+=delta;
 
-            if(timeSinceLastTic >= TICK_TIME){
+            if(timeSinceLastTic >= TICK_TIME/tickTimeModifier){
                 // THIS IS WHERE THE TICK HAPPENS! PARTY!
                 if(!collidesWithGridOrWall(currentPiece.pieceGrid, currentPiece.x, currentPiece.y - 1)) {
                     currentPiece.movePieceDown();
@@ -222,38 +228,38 @@ public class TetrisScreen implements Screen {
           }
       }
 
-          void clearRows(){
+          void clearRows() {
               int rowsCleared = 0;
 
-              for(int i = 0; i < GRID_HEIGHT;){
+              for (int i = 0; i < GRID_HEIGHT; ) {
                   boolean full = true;
 
-                  for(int j = 0; j < GRID_WIDTH; j++) {
-                      if(grid[i][j] == 0)
+                  for (int j = 0; j < GRID_WIDTH; j++) {
+                      if (grid[i][j] == 0)
                           full = false;
                   }
 
-                  if(full){
+                  if (full) {
                       // Move rows down...
                       rows++;
                       rowsCleared++;
                       Gdx.input.cancelVibrate();
                       Gdx.input.vibrate(500);
 
-                      for(int k = i; k < GRID_HEIGHT - 1; k++){
+                      for (int k = i; k < GRID_HEIGHT - 1; k++) {
                           grid[k] = grid[k + 1];
                       }
 
                       grid[GRID_HEIGHT - 1] = new int[GRID_WIDTH];
-                  }
-                  else {
+                  } else {
                       i++;
                   }
 
               }
 
+              score += rowsCleared * POINTS_PER_ROW;
+              Gdx.app.log("Score","Score: " + score);
           }
-
 
     }
 
@@ -278,6 +284,30 @@ public class TetrisScreen implements Screen {
 
             if(pushed(Ass.pauseScreenMenuButton)){
                game.setScreen(new MenuScreen(game));
+            }
+
+        }
+    }
+
+    class GameOverState implements GameState {
+
+
+        public GameOverState(){
+
+        }
+
+        public void draw(){
+            batch.draw(Ass.pauseScreen, 0, 0);
+        }
+
+        public void update(float delta){
+
+            if(pushed(Ass.pauseScreenMenuButton)){
+                game.setScreen(new MenuScreen(game));
+            }
+
+            if(pushed(Ass.pauseScreenResumeButton)){
+                game.setScreen(new TetrisScreen(game));
             }
 
         }
