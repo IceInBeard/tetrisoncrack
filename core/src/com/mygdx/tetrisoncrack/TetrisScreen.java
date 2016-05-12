@@ -27,7 +27,7 @@ public class TetrisScreen implements Screen {
     final int BLOCK_SIZE = 34;
 
     // Time between each tick in the game (like for example when block moves down)
-    float TICK_TIME = 1;
+    float TICK_TIME = 0.5f;
 
     // Handles the thingimajigg that prints things to the screen
     SpriteBatch batch = new SpriteBatch();
@@ -45,6 +45,8 @@ public class TetrisScreen implements Screen {
     tetrisPiece currentPiece, nextPiece, nextNextPiece, heldPiece;
 
     float timeSinceLastTic;
+
+    int rows;
 
     Random randomPieceGenerator;
 
@@ -165,6 +167,7 @@ public class TetrisScreen implements Screen {
                 }
                 else {
                     pieceToGrid();
+                    clearRows();
                     spawnPieceOnGrid();
                 }
 
@@ -219,6 +222,39 @@ public class TetrisScreen implements Screen {
           }
       }
 
+          void clearRows(){
+              int rowsCleared = 0;
+
+              for(int i = 0; i < GRID_HEIGHT;){
+                  boolean full = true;
+
+                  for(int j = 0; j < GRID_WIDTH; j++) {
+                      if(grid[i][j] == 0)
+                          full = false;
+                  }
+
+                  if(full){
+                      // Move rows down...
+                      rows++;
+                      rowsCleared++;
+                      Gdx.input.cancelVibrate();
+                      Gdx.input.vibrate(500);
+
+                      for(int k = i; k < GRID_HEIGHT - 1; k++){
+                          grid[k] = grid[k + 1];
+                      }
+
+                      grid[GRID_HEIGHT - 1] = new int[GRID_WIDTH];
+                  }
+                  else {
+                      i++;
+                  }
+
+              }
+
+          }
+
+
     }
 
     class PauseState implements GameState {
@@ -236,7 +272,7 @@ public class TetrisScreen implements Screen {
 
             // Should get it's own button in the future
             // now it's just down in the corner because of reasons
-            if(pushed(Ass.gamePauseButton)){
+            if(pushed(Ass.pauseScreenResumeButton)){
                 state = returnState;
             }
 

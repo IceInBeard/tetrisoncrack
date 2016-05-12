@@ -17,7 +17,7 @@ public class Ass {
 
     public static TextureRegion menuScreen , gameScreen, pauseScreen, blockTextureRegion;
     public static TextureRegion[] penguinAnimationRegion;
-    public static Rectangle tetrisScreenGrid, menuScreenStartButton , gamePauseButton, pauseScreenMenuButton;
+    public static Rectangle tetrisScreenGrid, menuScreenStartButton , gamePauseButton, pauseScreenMenuButton, pauseScreenResumeButton;
     public static Color black, white, green;
     public static Texture menuScreenTexture, pauseScreenTexture, gameScreenTexture, blockTexture, penguinImg;
 
@@ -42,7 +42,7 @@ public class Ass {
         // We have the buttons on the background so we make a clickable rectangle
         // May implement Stage and Actors?
         pauseScreenMenuButton = new Rectangle(50, 90, 380, 90);
-
+        pauseScreenResumeButton = new Rectangle(50, 180, 380, 90);
 
         // Background for game screen
         gameScreenTexture = new Texture(Gdx.files.internal("TetrisOnCrack-spelplan.png"));
