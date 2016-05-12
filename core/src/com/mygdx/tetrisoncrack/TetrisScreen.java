@@ -88,6 +88,46 @@ public class TetrisScreen implements Screen {
         grid[9][5] = 1;
         grid[9][4] = 1;
 
+        /*
+        /   Swipe control
+        */
+        Gdx.input.setInputProcessor(new SimpleDirectionGestureDetector(new SimpleDirectionGestureDetector.DirectionListener() {
+
+            @Override
+            public void onUp() {
+                Gdx.app.log("MyTag", "Up");
+            }
+
+            @Override
+            public void onRight() {
+                Gdx.app.log("MyTag", "Right");
+
+                // Should keep within the screen
+                // should probably be 9 - the width of the block 7 = 9 - 2
+                if(currentPiece != null && !collidesWithGridOrWall(currentPiece.pieceGrid,currentPiece.x + 1,currentPiece.y)){
+                    currentPiece.movePieceRight();
+                }
+
+
+
+            }
+
+            @Override
+            public void onLeft() {
+                Gdx.app.log("MyTag", "Left");
+                if(currentPiece != null && !collidesWithGridOrWall(currentPiece.pieceGrid,currentPiece.x - 1,currentPiece.y)) {
+                    currentPiece.movePieceLeft();
+                }
+
+
+            }
+
+            @Override
+            public void onDown() {
+                Gdx.app.log("MyTag", "Down");
+            }
+        }));
+
 
     }
 
@@ -107,13 +147,14 @@ public class TetrisScreen implements Screen {
                 spawnPieceOnGrid();
             }
 
-            TICK_TIME = 0.5f;
+
             timeSinceLastTic+=delta;
 
             if(timeSinceLastTic >= TICK_TIME){
                 // THIS IS WHERE THE TICK HAPPENS! PARTY!
-
-                currentPiece.movePieceDown();
+                if(!collidesWithGridOrWall(currentPiece.pieceGrid, currentPiece.x, currentPiece.y - 1)) {
+                    currentPiece.movePieceDown();
+                }
 
                 timeSinceLastTic = 0;
             }
@@ -121,10 +162,14 @@ public class TetrisScreen implements Screen {
             // Draw the penguin animation
             elapsedTime += delta;
             batch.draw(penguinAnimation.getKeyFrame(elapsedTime,true) ,150, 695);
+
+
         }
 
+
+
         void spawnPieceOnGrid(){
-            currentPiece = new tetrisPiece(4);
+            currentPiece = new tetrisPiece(0);
 
            /* currentPiece = nextPiece;
             nextPiece = nextNextPiece;
@@ -184,6 +229,25 @@ public class TetrisScreen implements Screen {
 
         batch.end();
 
+    }
+
+    boolean collidesWithGridOrWall(int[][] p, int p_x, int p_y){
+        // i is p row, j is p column
+        for(int i = 0; i < p.length; i++){
+            for(int j = 0; j < p.length; j++){
+                if(p[i][j] == 1){
+                    int b_x = p_x + j;
+                    int b_y = p_y + i;
+
+                    if(b_y < 0 || b_y >= GRID_HEIGHT ||
+                            b_x < 0 || b_x >= GRID_WIDTH ||
+                            grid[b_y][b_x] == 1)
+                        return true;
+                }
+            }
+        }
+
+        return false;
     }
 
     void drawGame(){

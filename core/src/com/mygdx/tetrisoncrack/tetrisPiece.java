@@ -2,7 +2,7 @@ package com.mygdx.tetrisoncrack;
 
 
 public class tetrisPiece {
-    int x, y, type;
+    int x, y, type, widht, height;
     int [][] pieceGrid;
 
     public tetrisPiece(int pieceType){
@@ -16,11 +16,19 @@ public class tetrisPiece {
         // Shape of the piece
         pieceGrid = Ass.tetrisPieces[pieceType];
 
+        widht = pieceGrid.length;
+
 
 
     }
 
     void movePieceDown(){
         y -= 1;
+    }
+    void movePieceRight(){
+        x += 1;
+    }
+    void movePieceLeft(){
+        x -= 1;
     }
 }

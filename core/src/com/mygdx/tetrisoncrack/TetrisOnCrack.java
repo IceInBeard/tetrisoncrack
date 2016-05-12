@@ -16,6 +16,7 @@ public class TetrisOnCrack extends Game {
 		Ass.load();
 		this.setScreen(new MenuScreen(this));
 
+		/*
 		Gdx.input.setInputProcessor(new SimpleDirectionGestureDetector(new SimpleDirectionGestureDetector.DirectionListener() {
 
 			@Override
@@ -39,11 +40,10 @@ public class TetrisOnCrack extends Game {
 
 			@Override
 			public void onDown() {
-
 				Gdx.app.log("MyTag", "Down");
-
 			}
 		}));
+	*/
 	}
 
 	@Override
