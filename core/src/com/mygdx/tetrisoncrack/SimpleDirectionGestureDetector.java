@@ -12,6 +12,7 @@ public class SimpleDirectionGestureDetector extends GestureDetector {
         void onUp();
 
         void onDown();
+
     }
 
     public SimpleDirectionGestureDetector(DirectionListener directionListener) {

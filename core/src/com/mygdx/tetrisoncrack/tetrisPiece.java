@@ -1,6 +1,5 @@
 package com.mygdx.tetrisoncrack;
 
-
 public class tetrisPiece {
     int x, y, type, widht, height;
     int [][] pieceGrid;
@@ -33,7 +32,7 @@ public class tetrisPiece {
     }
 
     // Rotates the piece
-    void rotate(){
+    int[][] rotate(){
 
         // Create a new "rotated" piece
         int[][] new_grid = new int[pieceGrid.length][pieceGrid[0].length];
@@ -44,6 +43,12 @@ public class tetrisPiece {
             }
         }
         // Replace the grid with the new grid
-        pieceGrid = new_grid;
+        // Should check if the new one rotates
+        // out of bounds before changing
+
+            return new_grid;
+
+
+
     }
 }

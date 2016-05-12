@@ -10,6 +10,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Matrix4;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.math.Rectangle;
+
 import java.util.Random;
 
 
@@ -63,6 +64,8 @@ public class TetrisScreen implements Screen {
     // It's [row][column]
     int[][] grid = new int[GRID_HEIGHT][GRID_WIDTH];
 
+    // Placeholder for the rotated piece
+    int[][] rotatedPiece;
 
     public TetrisScreen(Game game) {
 
@@ -92,23 +95,24 @@ public class TetrisScreen implements Screen {
         grid[9][4] = 1;
 
         /*
-        /   Swipe control
+        /   Touch control
         */
         Gdx.input.setInputProcessor(new SimpleDirectionGestureDetector(new SimpleDirectionGestureDetector.DirectionListener() {
 
             @Override
             public void onUp() {
                 Gdx.app.log("MyTag", "Up");
-
-                currentPiece.rotate();
+                rotatedPiece = currentPiece.rotate();
+                if(!collidesWithGridOrWall(rotatedPiece,currentPiece.x,currentPiece.y)){
+                    currentPiece.pieceGrid = rotatedPiece;
+                }
             }
 
             @Override
             public void onRight() {
                 Gdx.app.log("MyTag", "Right");
 
-                // Should keep within the screen
-                // should probably be 9 - the width of the block 7 = 9 - 2
+
                 if(currentPiece != null && !collidesWithGridOrWall(currentPiece.pieceGrid,currentPiece.x + 1,currentPiece.y)){
                     currentPiece.movePieceRight();
                 }
@@ -132,7 +136,6 @@ public class TetrisScreen implements Screen {
                 Gdx.app.log("MyTag", "Down");
             }
         }));
-
 
     }
 
@@ -203,6 +206,9 @@ public class TetrisScreen implements Screen {
         }
 
       void pieceToGrid(){
+
+          Gdx.input.vibrate(100);
+
           int size = currentPiece.pieceGrid.length;
           for(int i = 0; i < size; i++){
               for(int j = 0; j < size; j++){
@@ -268,7 +274,7 @@ public class TetrisScreen implements Screen {
 
     }
 
-    boolean collidesWithGridOrWall(int[][] p, int p_x, int p_y){
+    public boolean collidesWithGridOrWall(int[][] p, int p_x, int p_y){
         // i is p row, j is p column
         for(int i = 0; i < p.length; i++){
             for(int j = 0; j < p.length; j++){
