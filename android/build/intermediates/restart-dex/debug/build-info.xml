@@ -4,34 +4,61 @@
     api-level="23"
     density="xxhdpi"
     format="7"
-    timestamp="5804308261181" >
+    timestamp="15835253396301"
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="69" />
+        duration="43" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="505" />
     <task
         name="instant-run-transform"
-        duration="3" />
+        duration="4" />
     <task
         name="verifier"
-        duration="0" />
+        duration="1" />
 
     <artifact
-        location="/Volumes/Storage/Git/tetrisoncrack/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
-        type="DEX" />
+        location="/Volumes/Storage/Git/tetrisoncrack/android/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
 
     <build timestamp="4969929991776" >
         <artifact
             location="/Volumes/Storage/Git/tetrisoncrack/android/build/outputs/apk/android-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="5804308261181" >
+    <build timestamp="15214548678984" >
+        <artifact
+            location="/Volumes/Storage/Git/tetrisoncrack/android/build/intermediates/res/resources-debug.ap_"
+            type="RESOURCES" />
+    </build>
+    <build timestamp="15793745451010" >
         <artifact
             location="/Volumes/Storage/Git/tetrisoncrack/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
             type="DEX" />
+    </build>
+    <build
+        timestamp="15813880252060"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Volumes/Storage/Git/tetrisoncrack/android/build/intermediates/builds/debug/15813880252060/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="15824300195580"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Volumes/Storage/Git/tetrisoncrack/android/build/intermediates/builds/debug/15824300195580/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="15835253396301"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Volumes/Storage/Git/tetrisoncrack/android/build/intermediates/reload-dex/debug/classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

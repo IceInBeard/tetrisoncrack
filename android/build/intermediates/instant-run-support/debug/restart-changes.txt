@@ -1,0 +1,1 @@
+CHANGED,/Volumes/Storage/Git/tetrisoncrack/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/tetrisoncrack/MenuScreen.class

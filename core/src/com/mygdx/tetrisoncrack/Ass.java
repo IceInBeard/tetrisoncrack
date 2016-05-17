@@ -1,23 +1,32 @@
 package com.mygdx.tetrisoncrack;
 
         import com.badlogic.gdx.Gdx;
+        import com.badlogic.gdx.files.FileHandle;
         import com.badlogic.gdx.graphics.Texture;
         import com.badlogic.gdx.graphics.Texture.TextureFilter;
         import com.badlogic.gdx.graphics.g2d.BitmapFont;
         import com.badlogic.gdx.graphics.g2d.TextureRegion;
         import com.badlogic.gdx.math.Rectangle;
         import com.badlogic.gdx.graphics.Color;
+        import com.badlogic.gdx.utils.I18NBundle;
+
+        import java.util.Locale;
 
 
 public class Ass {
 
-    public static TextureRegion menuScreen , gameScreen, pauseScreen, blockTextureRegion;
+    public static TextureRegion menuScreen , gameScreen, pauseScreen, blockTextureRegion, speechbubbleTextureRegion, selectCircle;
     public static TextureRegion[] penguinAnimationRegion;
-    public static Rectangle tetrisScreenGrid, menuScreenStartButton , gamePauseButton, gameTutorialButton, pauseScreenMenuButton, pauseScreenResumeButton;
+    public static Rectangle tetrisScreenGrid, menuScreenStartButton, menuScreenLanguageButton , gamePauseButton, gameTutorialButton, pauseScreenMenuButton, pauseScreenResumeButton, tutorialSpeachBubbleRect;
     public static Color black, white, green;
-    public static Texture menuScreenTexture, pauseScreenTexture, gameScreenTexture, blockTexture, penguinImg;
+    public static Texture menuScreenTexture, pauseScreenTexture, gameScreenTexture, blockTexture, penguinImg, speechbubbleTexture, menuScreenSelect;
 
     public static BitmapFont font;
+
+    //Used for translating stuff
+    public static FileHandle baseFileHandle;
+    public static I18NBundle myBundle;
+    public static Locale locale;
 
 
     // Load assets
@@ -28,9 +37,18 @@ public class Ass {
         menuScreenTexture.setFilter(TextureFilter.Linear, TextureFilter.Linear);
         menuScreen = new TextureRegion(menuScreenTexture, 0, 0, 480, 800);
 
+        // Language selection circle on the main menu
+        menuScreenSelect = new Texture(Gdx.files.internal("inringad.png"));
+        menuScreenSelect.setFilter(TextureFilter.Linear, TextureFilter.Linear);
+        selectCircle = new TextureRegion(menuScreenSelect, 0, 0, 90, 90);
+
         // We have the buttons on the background so we make a clickable rectangle
         // May implement Stage and Actors?
         menuScreenStartButton = new Rectangle(50, 410, 380, 90);
+        menuScreenLanguageButton = new Rectangle(50, 100, 380, 90);
+
+
+
 
         // Background for pause screen
         pauseScreenTexture = new Texture(Gdx.files.internal("TetrisOnCrack-pausemenu.png"));
@@ -47,16 +65,23 @@ public class Ass {
         gameScreenTexture.setFilter(TextureFilter.Linear, TextureFilter.Linear);
         gameScreen = new TextureRegion(gameScreenTexture, 0, 0, 480, 800);
 
+        // Speech bubble
+        speechbubbleTexture = new Texture(Gdx.files.internal("pratbubbla.png"));
+        speechbubbleTexture.setFilter(TextureFilter.Linear, TextureFilter.Linear);
+        speechbubbleTextureRegion = new TextureRegion(speechbubbleTexture, 0, 0, 340, 200);
+        tutorialSpeachBubbleRect = new Rectangle(40,480, 340,200);
+
         // We have the buttons on the background so we make a clickable rectangle
         // May implement Stage and Actors?
         gamePauseButton = new Rectangle(390, 10, 80, 80);
-        gameTutorialButton = new Rectangle(390, 680, 80, 80);
+        gameTutorialButton = new Rectangle(150, 695, 128, 128);
+
 
         // The grid (size of one block)
         tetrisScreenGrid = new Rectangle(40, 20, 34, 34);
 
         //
-        // Block colors (might change, more to come)
+        // colors (might change, more to come)
         //
 
         black = rgb(0,0,0);
@@ -85,6 +110,11 @@ public class Ass {
         // Fonts
         font = new BitmapFont(Gdx.files.classpath("com/badlogic/gdx/utils/arial-15.fnt"), Gdx.files.classpath("com/badlogic/gdx/utils/arial-15.png"),false, true);
 
+        // Translation and stuff like that
+        baseFileHandle = Gdx.files.internal("MyBundle");
+        locale = new Locale("en", "GB");
+        //Locale locale = new Locale("sv", "SE");
+        myBundle = I18NBundle.createBundle(baseFileHandle, locale);
 
 
 

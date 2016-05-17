@@ -7,9 +7,10 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Rectangle;
 
+import java.util.Locale;
+
 public class TetrisOnCrack extends Game {
-	SpriteBatch batch;
-	Texture img;
+	Locale locale;
 	
 	@Override
 	public void create () {

@@ -100,9 +100,11 @@ public class TetrisScreen implements Screen {
             @Override
             public void onUp() {
                 Gdx.app.log("MyTag", "Up");
-                rotatedPiece = currentPiece.rotate();
-                if(!collidesWithGridOrWall(rotatedPiece,currentPiece.x,currentPiece.y)){
-                    currentPiece.pieceGrid = rotatedPiece;
+                if(state instanceof PlayState){
+                    rotatedPiece = currentPiece.rotate();
+                    if(!collidesWithGridOrWall(rotatedPiece,currentPiece.x,currentPiece.y)){
+                        currentPiece.pieceGrid = rotatedPiece;
+                    }
                 }
             }
 
@@ -110,9 +112,12 @@ public class TetrisScreen implements Screen {
             public void onRight() {
                 Gdx.app.log("MyTag", "Right");
 
-
-                if(currentPiece != null && !collidesWithGridOrWall(currentPiece.pieceGrid,currentPiece.x + 1,currentPiece.y)){
-                    currentPiece.movePieceRight();
+                if(state instanceof PlayState){
+                    if(currentPiece != null && !collidesWithGridOrWall(currentPiece.pieceGrid,currentPiece.x + 1,currentPiece.y)){
+                        currentPiece.movePieceRight();
+                    }
+                } else if(state instanceof tutorialState) {
+                    Gdx.app.log("State","State: Tutorial");
                 }
 
 
@@ -122,8 +127,13 @@ public class TetrisScreen implements Screen {
             @Override
             public void onLeft() {
                 Gdx.app.log("MyTag", "Left");
-                if(currentPiece != null && !collidesWithGridOrWall(currentPiece.pieceGrid,currentPiece.x - 1,currentPiece.y)) {
-                    currentPiece.movePieceLeft();
+
+                if(state instanceof PlayState){
+                    if(currentPiece != null && !collidesWithGridOrWall(currentPiece.pieceGrid,currentPiece.x - 1,currentPiece.y)) {
+                        currentPiece.movePieceLeft();
+                    }
+                } else if(state instanceof tutorialState) {
+                    Gdx.app.log("State","State: Tutorial");
                 }
 
 
@@ -138,10 +148,6 @@ public class TetrisScreen implements Screen {
     }
 
       class PlayState implements GameState {
-
-      public void PlayState(){
-
-      }
 
 
         public void draw(){
@@ -325,24 +331,41 @@ public class TetrisScreen implements Screen {
 
     class tutorialState implements GameState {
         GameState returnState;
+        int tutorialStage;
+        String[] tutorialStrings;
 
         public tutorialState(GameState returnState){
             this.returnState = returnState;
+            tutorialStage = 0;
+            tutorialStrings = new String[3];
+            tutorialStrings[0] = Ass.myBundle.get("tuttText1");
+            tutorialStrings[1] = Ass.myBundle.get("tuttText2");
+            tutorialStrings[2] = Ass.myBundle.get("tuttText3");
+
         }
 
         public void draw(){
 
             drawGame();
             drawPenguin();
-            // batch.draw(Ass.pauseScreen, 0, 0);
+            batch.setColor(1f,1f,1f,0.9f);
+            batch.draw(Ass.speechbubbleTextureRegion, 40, 480);
+            Ass.font.draw(batch, tutorialStrings[tutorialStage] , 80 , 590 );
 
             drawScore(10,780);
         }
 
         public void update(float delta){
 
-            if(pushed(Ass.gameTutorialButton)){
-                state = returnState;
+            elapsedTime += delta;
+
+            if(pushed(Ass.tutorialSpeachBubbleRect)){
+                tutorialStage += 1;
+
+                if(tutorialStage >= tutorialStrings.length){
+                    state = returnState;
+                }
+
             }
 
 
@@ -410,7 +433,7 @@ public class TetrisScreen implements Screen {
 
 
         Ass.font.setColor(Ass.black);
-        Ass.font.draw(batch, "Score: " + score , x, y);
+        Ass.font.draw(batch, Ass.myBundle.get("score") + ": " + score , x, y);
 
     }
 

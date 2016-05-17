@@ -9,6 +9,9 @@ import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector3;
+import com.badlogic.gdx.utils.I18NBundle;
+
+import java.util.Locale;
 
 
 public class MenuScreen implements Screen {
@@ -20,15 +23,21 @@ public class MenuScreen implements Screen {
     Sprite mainMenu_sprite;
     Game game;
 
+    int languageSelectX;
+
 
     public MenuScreen(Game game) {
         this.game = game;
+
+        languageSelectX = 95;
 
         cam = new OrthographicCamera();
         cam.setToOrtho(false, 480, 800);
 
         mainMenu_sprite = new Sprite(Ass.menuScreen);
         mainMenu_sprite.setPosition(0, 0);
+
+
 
 
     }
@@ -52,6 +61,20 @@ public class MenuScreen implements Screen {
             game.setScreen(new TetrisScreen(game));
         }
 
+        if (pushed(Ass.menuScreenLanguageButton)){
+            if(Ass.locale.getLanguage() == "en"){
+                Ass.locale = new Locale("sv", "SE");
+                languageSelectX = 245;
+            } else {
+                Ass.locale = new Locale("en", "GB");
+                languageSelectX = 95;
+            }
+
+            Ass.myBundle = I18NBundle.createBundle(Ass.baseFileHandle, Ass.locale);
+
+            Gdx.app.log("Lang", "Lang: " + Ass.locale);
+        }
+
         // Add background color
         Gdx.gl.glClearColor(135/255f, 206/255f, 235/255f, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
@@ -60,6 +83,8 @@ public class MenuScreen implements Screen {
         batch.begin();
 
         batch.draw(mainMenu_sprite, 0, 0);
+
+        batch.draw(Ass.selectCircle, languageSelectX, 85);
 
 
 
