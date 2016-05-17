@@ -1,9 +1,5 @@
 package com.mygdx.tetrisoncrack;
 
-        import java.util.HashMap;
-        import java.util.HashSet;
-        import java.util.Map;
-
         import com.badlogic.gdx.Gdx;
         import com.badlogic.gdx.graphics.Texture;
         import com.badlogic.gdx.graphics.Texture.TextureFilter;
@@ -11,15 +7,17 @@ package com.mygdx.tetrisoncrack;
         import com.badlogic.gdx.graphics.g2d.TextureRegion;
         import com.badlogic.gdx.math.Rectangle;
         import com.badlogic.gdx.graphics.Color;
-        import com.badlogic.gdx.Input.Keys;
+
 
 public class Ass {
 
     public static TextureRegion menuScreen , gameScreen, pauseScreen, blockTextureRegion;
     public static TextureRegion[] penguinAnimationRegion;
-    public static Rectangle tetrisScreenGrid, menuScreenStartButton , gamePauseButton, pauseScreenMenuButton, pauseScreenResumeButton;
+    public static Rectangle tetrisScreenGrid, menuScreenStartButton , gamePauseButton, gameTutorialButton, pauseScreenMenuButton, pauseScreenResumeButton;
     public static Color black, white, green;
     public static Texture menuScreenTexture, pauseScreenTexture, gameScreenTexture, blockTexture, penguinImg;
+
+    public static BitmapFont font;
 
 
     // Load assets
@@ -52,6 +50,7 @@ public class Ass {
         // We have the buttons on the background so we make a clickable rectangle
         // May implement Stage and Actors?
         gamePauseButton = new Rectangle(390, 10, 80, 80);
+        gameTutorialButton = new Rectangle(390, 680, 80, 80);
 
         // The grid (size of one block)
         tetrisScreenGrid = new Rectangle(40, 20, 34, 34);
@@ -80,6 +79,12 @@ public class Ass {
         penguinAnimationRegion[1] = penguinFrameSplitter[0][1]; // Standard arms upp
         penguinAnimationRegion[2] = penguinFrameSplitter[1][0]; // Pooping
         penguinAnimationRegion[3] = penguinFrameSplitter[1][1]; // Happy
+
+
+
+        // Fonts
+        font = new BitmapFont(Gdx.files.classpath("com/badlogic/gdx/utils/arial-15.fnt"), Gdx.files.classpath("com/badlogic/gdx/utils/arial-15.png"),false, true);
+
 
 
 

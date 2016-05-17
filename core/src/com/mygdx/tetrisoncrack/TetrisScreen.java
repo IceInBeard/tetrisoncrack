@@ -146,11 +146,21 @@ public class TetrisScreen implements Screen {
 
         public void draw(){
             drawGame();
+            drawPenguin();
+            drawScore(10,780);
+
         }
 
         public void update(float delta){
+
+            elapsedTime += delta;
+
             if(pushed(Ass.gamePauseButton)){
                  state = new PauseState(PlayState.this);
+            }
+
+            if(pushed(Ass.gameTutorialButton)){
+                state = new tutorialState(PlayState.this);
             }
 
             if(currentPiece == null) {
@@ -179,10 +189,6 @@ public class TetrisScreen implements Screen {
 
                 timeSinceLastTic = 0;
             }
-
-            // Draw the penguin animation
-            elapsedTime += delta;
-            batch.draw(penguinAnimation.getKeyFrame(elapsedTime,true) ,150, 695);
 
 
         }
@@ -272,6 +278,8 @@ public class TetrisScreen implements Screen {
 
         public void draw(){
             batch.draw(Ass.pauseScreen, 0, 0);
+
+            drawScore(10,780);
         }
 
         public void update(float delta){
@@ -298,6 +306,8 @@ public class TetrisScreen implements Screen {
 
         public void draw(){
             batch.draw(Ass.pauseScreen, 0, 0);
+
+            drawScore(10,780);
         }
 
         public void update(float delta){
@@ -309,6 +319,32 @@ public class TetrisScreen implements Screen {
             if(pushed(Ass.pauseScreenResumeButton)){
                 game.setScreen(new TetrisScreen(game));
             }
+
+        }
+    }
+
+    class tutorialState implements GameState {
+        GameState returnState;
+
+        public tutorialState(GameState returnState){
+            this.returnState = returnState;
+        }
+
+        public void draw(){
+
+            drawGame();
+            drawPenguin();
+            // batch.draw(Ass.pauseScreen, 0, 0);
+
+            drawScore(10,780);
+        }
+
+        public void update(float delta){
+
+            if(pushed(Ass.gameTutorialButton)){
+                state = returnState;
+            }
+
 
         }
     }
@@ -368,6 +404,19 @@ public class TetrisScreen implements Screen {
         if(currentPiece != null) {
             drawBlocks(currentPiece.pieceGrid, Ass.tetrisScreenGrid, currentPiece.x, currentPiece.y);
         }
+    }
+
+    void drawScore(int x, int y){
+
+
+        Ass.font.setColor(Ass.black);
+        Ass.font.draw(batch, "Score: " + score , x, y);
+
+    }
+
+    void drawPenguin(){
+        // Draw the penguin animation
+        batch.draw(penguinAnimation.getKeyFrame(elapsedTime,true) ,150, 695);
     }
 
     void drawBlocks(int[][] blocks, Rectangle gridRectangle, int x, int y){
