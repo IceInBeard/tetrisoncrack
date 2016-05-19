@@ -69,7 +69,7 @@ public class Ass {
 
         // Placement of next and nextnext block
         nextBlock = new Rectangle(405, 690,17,17);
-        nextNextBlock = new Rectangle(405, 610,17,17);
+        nextNextBlock = new Rectangle(405, 600,17,17);
 
         // Speech bubble
         speechbubbleTexture = new Texture(Gdx.files.internal("pratbubbla.png"));

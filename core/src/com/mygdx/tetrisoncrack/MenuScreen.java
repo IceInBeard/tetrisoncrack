@@ -72,7 +72,7 @@ public class MenuScreen implements Screen {
 
             Ass.myBundle = I18NBundle.createBundle(Ass.baseFileHandle, Ass.locale);
 
-            Gdx.app.log("Lang", "Lang: " + Ass.locale);
+            //Gdx.app.log("Lang", "Lang: " + Ass.locale);
         }
 
         // Add background color

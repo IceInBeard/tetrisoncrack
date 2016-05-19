@@ -99,7 +99,7 @@ public class TetrisScreen implements Screen {
 
             @Override
             public void onUp() {
-                Gdx.app.log("MyTag", "Up");
+                // Gdx.app.log("MyTag", "Up");
                 if(state instanceof PlayState){
                     rotatedPiece = currentPiece.rotate();
                     if(!collidesWithGridOrWall(rotatedPiece,currentPiece.x,currentPiece.y)){
@@ -110,14 +110,14 @@ public class TetrisScreen implements Screen {
 
             @Override
             public void onRight() {
-                Gdx.app.log("MyTag", "Right");
+               // Gdx.app.log("MyTag", "Right");
 
                 if(state instanceof PlayState){
                     if(currentPiece != null && !collidesWithGridOrWall(currentPiece.pieceGrid,currentPiece.x + 1,currentPiece.y)){
                         currentPiece.movePieceRight();
                     }
                 } else if(state instanceof tutorialState) {
-                    Gdx.app.log("State","State: Tutorial");
+                   // Gdx.app.log("State","State: Tutorial");
                 }
 
 
@@ -126,14 +126,14 @@ public class TetrisScreen implements Screen {
 
             @Override
             public void onLeft() {
-                Gdx.app.log("MyTag", "Left");
+               // Gdx.app.log("MyTag", "Left");
 
                 if(state instanceof PlayState){
                     if(currentPiece != null && !collidesWithGridOrWall(currentPiece.pieceGrid,currentPiece.x - 1,currentPiece.y)) {
                         currentPiece.movePieceLeft();
                     }
                 } else if(state instanceof tutorialState) {
-                    Gdx.app.log("State","State: Tutorial");
+                    // Gdx.app.log("State","State: Tutorial");
                 }
 
 
@@ -141,7 +141,7 @@ public class TetrisScreen implements Screen {
 
             @Override
             public void onDown() {
-                Gdx.app.log("MyTag", "Down");
+                // Gdx.app.log("MyTag", "Down");
             }
         }));
 
@@ -175,7 +175,7 @@ public class TetrisScreen implements Screen {
 
             // Check if Game over
             if(collidesWithGridOrWall(currentPiece.pieceGrid, currentPiece.x, currentPiece.y)){
-                Gdx.app.log("GameOver","Game Over");
+                //Gdx.app.log("GameOver","Game Over");
                 state = new GameOverState();
             }
 
@@ -270,7 +270,6 @@ public class TetrisScreen implements Screen {
               }
 
               score += rowsCleared * POINTS_PER_ROW;
-              Gdx.app.log("Score","Score: " + score);
           }
 
     }
@@ -458,7 +457,6 @@ public class TetrisScreen implements Screen {
             for(int j = 0; j < blocks[i].length; j++){
                 // Need to be expanded to take more colors than 1
                 if(blocks[i][j] == 1 && y + i < GRID_HEIGHT - 2){
-                   // Gdx.app.log("Draw blocks", "i/j " + i + "/" + j);
 
                     batch.draw(
                             block_sprite,
