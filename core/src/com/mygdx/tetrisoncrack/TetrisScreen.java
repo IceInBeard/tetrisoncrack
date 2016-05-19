@@ -311,7 +311,7 @@ public class TetrisScreen implements Screen {
         }
 
         public void draw(){
-            batch.draw(Ass.pauseScreen, 0, 0);
+            batch.draw(Ass.gameOverScreen, 0, 0);
 
             drawScore(10,780);
         }
@@ -426,6 +426,9 @@ public class TetrisScreen implements Screen {
 
         if(currentPiece != null) {
             drawBlocks(currentPiece.pieceGrid, Ass.tetrisScreenGrid, currentPiece.x, currentPiece.y);
+
+            drawBlocks(nextPiece.pieceGrid,Ass.nextBlock,0,0);
+            drawBlocks(nextNextPiece.pieceGrid,Ass.nextNextBlock,0,0);
         }
     }
 

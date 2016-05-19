@@ -15,11 +15,11 @@ package com.mygdx.tetrisoncrack;
 
 public class Ass {
 
-    public static TextureRegion menuScreen , gameScreen, pauseScreen, blockTextureRegion, speechbubbleTextureRegion, selectCircle;
+    public static TextureRegion menuScreen , gameScreen, pauseScreen, blockTextureRegion, speechbubbleTextureRegion, selectCircle, gameOverScreen;
     public static TextureRegion[] penguinAnimationRegion;
-    public static Rectangle tetrisScreenGrid, menuScreenStartButton, menuScreenLanguageButton , gamePauseButton, gameTutorialButton, pauseScreenMenuButton, pauseScreenResumeButton, tutorialSpeachBubbleRect;
+    public static Rectangle tetrisScreenGrid, menuScreenStartButton, menuScreenLanguageButton , gamePauseButton, gameTutorialButton, pauseScreenMenuButton, pauseScreenResumeButton, tutorialSpeachBubbleRect, nextBlock, nextNextBlock;
     public static Color black, white, green;
-    public static Texture menuScreenTexture, pauseScreenTexture, gameScreenTexture, blockTexture, penguinImg, speechbubbleTexture, menuScreenSelect;
+    public static Texture menuScreenTexture, pauseScreenTexture, gameScreenTexture, blockTexture, penguinImg, speechbubbleTexture, menuScreenSelect, gameOverScreenTexture;
 
     public static BitmapFont font;
 
@@ -47,8 +47,10 @@ public class Ass {
         menuScreenStartButton = new Rectangle(50, 410, 380, 90);
         menuScreenLanguageButton = new Rectangle(50, 100, 380, 90);
 
-
-
+        // Background for Game over screen
+        gameOverScreenTexture = new Texture(Gdx.files.internal("TetrisOnCrack-gameover.png"));
+        gameOverScreenTexture.setFilter(TextureFilter.Linear, TextureFilter.Linear);
+        gameOverScreen = new TextureRegion(gameOverScreenTexture, 0, 0, 480, 800);
 
         // Background for pause screen
         pauseScreenTexture = new Texture(Gdx.files.internal("TetrisOnCrack-pausemenu.png"));
@@ -61,9 +63,13 @@ public class Ass {
         pauseScreenResumeButton = new Rectangle(50, 180, 380, 90);
 
         // Background for game screen
-        gameScreenTexture = new Texture(Gdx.files.internal("TetrisOnCrack-spelplan.png"));
+        gameScreenTexture = new Texture(Gdx.files.internal("TetrisOnCrack-spelplan2.png"));
         gameScreenTexture.setFilter(TextureFilter.Linear, TextureFilter.Linear);
         gameScreen = new TextureRegion(gameScreenTexture, 0, 0, 480, 800);
+
+        // Placement of next and nextnext block
+        nextBlock = new Rectangle(405, 690,17,17);
+        nextNextBlock = new Rectangle(405, 610,17,17);
 
         // Speech bubble
         speechbubbleTexture = new Texture(Gdx.files.internal("pratbubbla.png"));
@@ -89,7 +95,7 @@ public class Ass {
         green = rgb(0,255,0);
 
         // Block texture
-        blockTexture = new Texture(Gdx.files.internal("block.png"));
+        blockTexture = new Texture(Gdx.files.internal("block2.png"));
         blockTexture.setFilter(TextureFilter.Linear, TextureFilter.Linear);
 
         blockTextureRegion = new TextureRegion(blockTexture, 0, 0, 34, 34);
