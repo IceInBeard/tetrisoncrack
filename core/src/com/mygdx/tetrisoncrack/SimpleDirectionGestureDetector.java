@@ -1,5 +1,6 @@
 package com.mygdx.tetrisoncrack;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.input.GestureDetector;
 
 
@@ -29,15 +30,15 @@ public class SimpleDirectionGestureDetector extends GestureDetector {
         @Override
         public boolean fling(float velocityX, float velocityY, int button) {
             if(Math.abs(velocityX)>Math.abs(velocityY)){
-                if(velocityX>0){
+                if(velocityX>=1){
                     directionListener.onRight();
-                }else{
+                }else if(velocityX <= -1){
                     directionListener.onLeft();
                 }
             }else{
-                if(velocityY>0){
+                if(velocityY>=1){
                     directionListener.onDown();
-                }else{
+                }else if(velocityY<= -1){
                     directionListener.onUp();
                 }
             }

@@ -31,7 +31,7 @@ public class Ass {
     public static Locale locale;
 
     public static Music backgroundMusic;
-    public static Sound gameOverSound, bamSound, babaBamSound, pfffSound, toaPaus, toiletBreak;
+    public static Sound gameOverSound, bamSound, babaBamSound, pfffSound, toaPaus, toiletBreak, ploppSound;
 
 
     // Load assets
@@ -137,6 +137,7 @@ public class Ass {
         pfffSound = Gdx.audio.newSound(Gdx.files.internal("Pfff.mp3"));
         toaPaus = Gdx.audio.newSound(Gdx.files.internal("TOAPAUS.mp3"));
         toiletBreak = Gdx.audio.newSound(Gdx.files.internal("TOILETBREAK.mp3"));
+        ploppSound = Gdx.audio.newSound(Gdx.files.internal("PLUUUUPPP.mp3"));
 
 
 

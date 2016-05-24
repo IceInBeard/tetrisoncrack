@@ -144,9 +144,14 @@ public class TetrisScreen implements Screen {
 
             @Override
             public void onDown() {
-                // Gdx.app.log("MyTag", "Down");
-                swipePieceDown();
+                 Gdx.app.log("MyTag", "Down");
+                if(state instanceof PlayState) {
+                    if (currentPiece != null && !collidesWithGridOrWall(currentPiece.pieceGrid,currentPiece.x,currentPiece.y-1)) {
+                        swipePieceDown();
+                    }
+                }
             }
+            
         }));
 
     }
@@ -441,6 +446,9 @@ public class TetrisScreen implements Screen {
     void swipePieceDown(){
         // When swiping down
         // move piece down and play sound?
+
+        //Ass.ploppSound.play();
+
         while (!collidesWithGridOrWall(currentPiece.pieceGrid, currentPiece.x, currentPiece.y - 1)){
             currentPiece.movePieceDown();
         }
