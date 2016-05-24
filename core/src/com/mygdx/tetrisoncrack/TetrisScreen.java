@@ -142,6 +142,7 @@ public class TetrisScreen implements Screen {
             @Override
             public void onDown() {
                 // Gdx.app.log("MyTag", "Down");
+                swipePieceDown();
             }
         }));
 
@@ -415,6 +416,15 @@ public class TetrisScreen implements Screen {
         }
 
         return false;
+    }
+
+    void swipePieceDown(){
+        // When swiping down
+        // move piece down and play sound?
+
+
+
+
     }
 
     void drawGame(){

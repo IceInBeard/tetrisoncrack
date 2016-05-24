@@ -1,6 +1,7 @@
 package com.mygdx.tetrisoncrack;
 
         import com.badlogic.gdx.Gdx;
+        import com.badlogic.gdx.audio.Music;
         import com.badlogic.gdx.files.FileHandle;
         import com.badlogic.gdx.graphics.Texture;
         import com.badlogic.gdx.graphics.Texture.TextureFilter;
@@ -27,6 +28,8 @@ public class Ass {
     public static FileHandle baseFileHandle;
     public static I18NBundle myBundle;
     public static Locale locale;
+
+    public static Music backgroundMusic;
 
 
     // Load assets
@@ -121,6 +124,13 @@ public class Ass {
         locale = new Locale("en", "GB");
         //Locale locale = new Locale("sv", "SE");
         myBundle = I18NBundle.createBundle(baseFileHandle, locale);
+
+
+        // Music and sound effects
+
+        backgroundMusic =  Gdx.audio.newMusic(Gdx.files.internal("TetrisBGMusic.mp3"));
+
+
 
 
 

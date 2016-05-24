@@ -16,7 +16,8 @@ public class TetrisOnCrack extends Game {
 	public void create () {
 		Ass.load();
 		this.setScreen(new MenuScreen(this));
-
+		Ass.backgroundMusic.setLooping(true);
+		Ass.backgroundMusic.play();
 		/*
 		Gdx.input.setInputProcessor(new SimpleDirectionGestureDetector(new SimpleDirectionGestureDetector.DirectionListener() {
 
