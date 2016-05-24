@@ -2,6 +2,7 @@ package com.mygdx.tetrisoncrack;
 
         import com.badlogic.gdx.Gdx;
         import com.badlogic.gdx.audio.Music;
+        import com.badlogic.gdx.audio.Sound;
         import com.badlogic.gdx.files.FileHandle;
         import com.badlogic.gdx.graphics.Texture;
         import com.badlogic.gdx.graphics.Texture.TextureFilter;
@@ -30,6 +31,7 @@ public class Ass {
     public static Locale locale;
 
     public static Music backgroundMusic;
+    public static Sound gameOverSound, bamSound, babaBamSound, pfffSound, toaPaus, toiletBreak;
 
 
     // Load assets
@@ -129,7 +131,12 @@ public class Ass {
         // Music and sound effects
 
         backgroundMusic =  Gdx.audio.newMusic(Gdx.files.internal("TetrisBGMusic.mp3"));
-
+        gameOverSound = Gdx.audio.newSound(Gdx.files.internal("Game_Over.mp3"));
+        bamSound = Gdx.audio.newSound(Gdx.files.internal("BAM.mp3"));
+        babaBamSound = Gdx.audio.newSound(Gdx.files.internal("BABABAM.mp3"));
+        pfffSound = Gdx.audio.newSound(Gdx.files.internal("Pfff.mp3"));
+        toaPaus = Gdx.audio.newSound(Gdx.files.internal("TOAPAUS.mp3"));
+        toiletBreak = Gdx.audio.newSound(Gdx.files.internal("TOILETBREAK.mp3"));
 
 
 

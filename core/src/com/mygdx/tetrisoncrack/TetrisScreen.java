@@ -91,6 +91,9 @@ public class TetrisScreen implements Screen {
 
         timeSinceLastTic = 0;
 
+        Ass.backgroundMusic.setLooping(true);
+        Ass.backgroundMusic.play();
+
 
         /*
         /   Touch control
@@ -230,6 +233,7 @@ public class TetrisScreen implements Screen {
       void pieceToGrid(){
 
           Gdx.input.vibrate(100);
+          Ass.pfffSound.play();
 
           int size = currentPiece.pieceGrid.length;
           for(int i = 0; i < size; i++){
@@ -256,8 +260,6 @@ public class TetrisScreen implements Screen {
                       // Move rows down...
                       rows++;
                       rowsCleared++;
-                      Gdx.input.cancelVibrate();
-                      Gdx.input.vibrate(500);
 
                       for (int k = i; k < GRID_HEIGHT - 1; k++) {
                           grid[k] = grid[k + 1];
@@ -269,8 +271,15 @@ public class TetrisScreen implements Screen {
                   }
 
               }
-
-              score += rowsCleared * POINTS_PER_ROW;
+              if(rowsCleared == 1){
+                  Ass.bamSound.play();
+              }
+              else if(rowsCleared >=2) {
+                Ass.babaBamSound.play();
+                  Gdx.input.cancelVibrate();
+                  Gdx.input.vibrate(500);
+              }
+              score += rowsCleared * rowsCleared * POINTS_PER_ROW;
           }
 
     }
@@ -280,6 +289,13 @@ public class TetrisScreen implements Screen {
 
         public PauseState(GameState returnState){
             this.returnState = returnState;
+            Ass.backgroundMusic.pause();
+            if(Ass.locale.getLanguage() == "en"){
+                Ass.toiletBreak.play();
+            }else {
+                Ass.toaPaus.play();
+            }
+
         }
 
         public void draw(){
@@ -293,6 +309,7 @@ public class TetrisScreen implements Screen {
             // Should get it's own button in the future
             // now it's just down in the corner because of reasons
             if(pushed(Ass.pauseScreenResumeButton)){
+                Ass.backgroundMusic.play();
                 state = returnState;
             }
 
@@ -307,6 +324,8 @@ public class TetrisScreen implements Screen {
 
 
         public GameOverState(){
+            Ass.backgroundMusic.pause();
+            Ass.gameOverSound.play();
 
         }
 
@@ -323,6 +342,7 @@ public class TetrisScreen implements Screen {
             }
 
             if(pushed(Ass.pauseScreenResumeButton)){
+                Ass.backgroundMusic.play();
                 game.setScreen(new TetrisScreen(game));
             }
 
@@ -421,10 +441,14 @@ public class TetrisScreen implements Screen {
     void swipePieceDown(){
         // When swiping down
         // move piece down and play sound?
+        while (!collidesWithGridOrWall(currentPiece.pieceGrid, currentPiece.x, currentPiece.y - 1)){
+            currentPiece.movePieceDown();
+        }
 
+    }
 
-
-
+    void levelUp(){
+        tickTimeModifier = tickTimeModifier * 1.2f;
     }
 
     void drawGame(){
