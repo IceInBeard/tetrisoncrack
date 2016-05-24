@@ -4,21 +4,20 @@
     api-level="23"
     density="xxhdpi"
     format="7"
-    timestamp="89482925028901"
-    verifier="METHOD_DELETED" >
+    timestamp="98904760302581" >
 
     <task
         name="javac"
-        duration="77" />
+        duration="62" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="34" />
+        duration="17" />
     <task
         name="verifier"
-        duration="4" />
+        duration="3" />
 
     <artifact
         location="/Volumes/Storage/Git/tetrisoncrack/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
@@ -29,14 +28,12 @@
             location="/Volumes/Storage/Git/tetrisoncrack/android/build/outputs/apk/android-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="87391260188125" >
+    <build timestamp="95148011570018" >
         <artifact
             location="/Volumes/Storage/Git/tetrisoncrack/android/build/intermediates/res/resources-debug.ap_"
             type="RESOURCES" />
     </build>
-    <build
-        timestamp="89482925028901"
-        verifier="METHOD_DELETED" >
+    <build timestamp="98904760302581" >
         <artifact
             location="/Volumes/Storage/Git/tetrisoncrack/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
             type="DEX" />

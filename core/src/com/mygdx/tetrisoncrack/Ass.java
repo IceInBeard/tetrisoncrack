@@ -17,11 +17,11 @@ package com.mygdx.tetrisoncrack;
 
 public class Ass {
 
-    public static TextureRegion menuScreen , gameScreen, pauseScreen, blockTextureRegion, speechbubbleTextureRegion, selectCircle, gameOverScreen;
+    public static TextureRegion menuScreen , gameScreen, pauseScreen, blockTextureRegion, speechbubbleTextureRegion, selectCircle, gameOverScreen, progressBar, progressBarFrame;
     public static TextureRegion[] penguinAnimationRegion;
     public static Rectangle tetrisScreenGrid, menuScreenStartButton, menuScreenLanguageButton , gamePauseButton, gameTutorialButton, pauseScreenMenuButton, pauseScreenResumeButton, tutorialSpeachBubbleRect, nextBlock, nextNextBlock;
     public static Color black, white, green;
-    public static Texture menuScreenTexture, pauseScreenTexture, gameScreenTexture, blockTexture, penguinImg, speechbubbleTexture, menuScreenSelect, gameOverScreenTexture;
+    public static Texture menuScreenTexture, pauseScreenTexture, gameScreenTexture, blockTexture, penguinImg, speechbubbleTexture, menuScreenSelect, gameOverScreenTexture, progressBarTexture, progressBarFrameTexture;
 
     public static BitmapFont font;
 
@@ -31,7 +31,7 @@ public class Ass {
     public static Locale locale;
 
     public static Music backgroundMusic;
-    public static Sound gameOverSound, bamSound, babaBamSound, pfffSound, toaPaus, toiletBreak, ploppSound;
+    public static Sound gameOverSound, bamSound, babaBamSound, pfffSound, toaPaus, toiletBreak, ploppSound, levelUpSound;
 
 
     // Load assets
@@ -62,6 +62,7 @@ public class Ass {
         pauseScreenTexture.setFilter(TextureFilter.Linear, TextureFilter.Linear);
         pauseScreen = new TextureRegion(pauseScreenTexture, 0, 0, 480, 800);
 
+
         // We have the buttons on the background so we make a clickable rectangle
         // May implement Stage and Actors?
         pauseScreenMenuButton = new Rectangle(50, 90, 380, 90);
@@ -71,6 +72,12 @@ public class Ass {
         gameScreenTexture = new Texture(Gdx.files.internal("TetrisOnCrack-spelplan2.png"));
         gameScreenTexture.setFilter(TextureFilter.Linear, TextureFilter.Linear);
         gameScreen = new TextureRegion(gameScreenTexture, 0, 0, 480, 800);
+
+        // Progressbar
+        progressBarTexture = new Texture(Gdx.files.internal("progressBar.png"));
+        progressBar = new TextureRegion(progressBarTexture, 0, 0, 40, 1);
+        progressBarFrameTexture = new Texture(Gdx.files.internal("progressFrame.png"));
+        progressBarFrame = new TextureRegion(progressBarFrameTexture, 0, 0, 40, 670);
 
         // Placement of next and nextnext block
         nextBlock = new Rectangle(405, 690,17,17);
@@ -138,6 +145,8 @@ public class Ass {
         toaPaus = Gdx.audio.newSound(Gdx.files.internal("TOAPAUS.mp3"));
         toiletBreak = Gdx.audio.newSound(Gdx.files.internal("TOILETBREAK.mp3"));
         ploppSound = Gdx.audio.newSound(Gdx.files.internal("PLUUUUPPP.mp3"));
+        levelUpSound = Gdx.audio.newSound(Gdx.files.internal("KASCHIIIIINGGG.mp3"));
+
 
 
 

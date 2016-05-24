@@ -1,9 +1,6 @@
 CHANGED,/Volumes/Storage/Git/tetrisoncrack/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/mygdx/tetrisoncrack/TetrisScreen$override.class
-CHANGED,/Volumes/Storage/Git/tetrisoncrack/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/mygdx/tetrisoncrack/SimpleDirectionGestureDetector$override.class
 CHANGED,/Volumes/Storage/Git/tetrisoncrack/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/mygdx/tetrisoncrack/TetrisScreen$GameOverState$override.class
 CHANGED,/Volumes/Storage/Git/tetrisoncrack/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/mygdx/tetrisoncrack/TetrisScreen$PauseState$override.class
 CHANGED,/Volumes/Storage/Git/tetrisoncrack/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class
 CHANGED,/Volumes/Storage/Git/tetrisoncrack/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/mygdx/tetrisoncrack/TetrisScreen$tutorialState$override.class
-CHANGED,/Volumes/Storage/Git/tetrisoncrack/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/mygdx/tetrisoncrack/TetrisScreen$1$override.class
-CHANGED,/Volumes/Storage/Git/tetrisoncrack/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/mygdx/tetrisoncrack/SimpleDirectionGestureDetector$DirectionGestureListener$override.class
 CHANGED,/Volumes/Storage/Git/tetrisoncrack/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/mygdx/tetrisoncrack/TetrisScreen$PlayState$override.class

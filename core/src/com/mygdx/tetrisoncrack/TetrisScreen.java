@@ -10,6 +10,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Matrix4;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.math.Rectangle;
+import com.badlogic.gdx.scenes.scene2d.ui.ProgressBar;
 
 import java.util.Random;
 
@@ -28,7 +29,8 @@ public class TetrisScreen implements Screen {
 
     // Time between each tick in the game (like for example when block moves down)
     final float TICK_TIME = 1;
-    float tickTimeModifier = 3; // Should increase with every level
+    float tickTimeModifier = 2; // Should increase with every level
+    int level = 1;
 
     final int POINTS_PER_ROW = 10;
 
@@ -65,6 +67,8 @@ public class TetrisScreen implements Screen {
         void update(float delta);
     }
 
+    int barHeight;
+    float barHeightPros;
 
     // The grid 2-dimensional array where origo is bottom left
     // It's [row][column]
@@ -144,14 +148,14 @@ public class TetrisScreen implements Screen {
 
             @Override
             public void onDown() {
-                 Gdx.app.log("MyTag", "Down");
+                // Gdx.app.log("MyTag", "Down");
                 if(state instanceof PlayState) {
                     if (currentPiece != null && !collidesWithGridOrWall(currentPiece.pieceGrid,currentPiece.x,currentPiece.y-1)) {
                         swipePieceDown();
                     }
                 }
             }
-            
+
         }));
 
     }
@@ -163,6 +167,7 @@ public class TetrisScreen implements Screen {
             drawGame();
             drawPenguin();
             drawScore(10,780);
+            drawLevel(10,750);
 
         }
 
@@ -285,6 +290,23 @@ public class TetrisScreen implements Screen {
                   Gdx.input.vibrate(500);
               }
               score += rowsCleared * rowsCleared * POINTS_PER_ROW;
+
+              if(score>= 50*level ){
+                  levelUp();
+              }
+
+              barHeightPros = (float)(score-50*(level-1))/ 50f;
+
+              if(barHeightPros >= 1.0){
+                  barHeightPros -= 1.0;
+              }
+              barHeight = (int)(barHeightPros*670f);
+
+              Gdx.app.log("Height","Heightpros: " + barHeightPros);
+              Gdx.app.log("Height","Height: " + barHeight);
+              Ass.progressBar.setRegionHeight(barHeight);
+
+
           }
 
     }
@@ -306,7 +328,8 @@ public class TetrisScreen implements Screen {
         public void draw(){
             batch.draw(Ass.pauseScreen, 0, 0);
 
-            drawScore(10,780);
+            drawScore(220,340);
+            drawLevel(220,370);
         }
 
         public void update(float delta){
@@ -319,7 +342,7 @@ public class TetrisScreen implements Screen {
             }
 
             if(pushed(Ass.pauseScreenMenuButton)){
-               game.setScreen(new MenuScreen(game));
+                game.setScreen(new MenuScreen(game));
             }
 
         }
@@ -337,7 +360,8 @@ public class TetrisScreen implements Screen {
         public void draw(){
             batch.draw(Ass.gameOverScreen, 0, 0);
 
-            drawScore(10,780);
+            drawScore(220,340);
+            drawLevel(220,370);
         }
 
         public void update(float delta){
@@ -456,12 +480,17 @@ public class TetrisScreen implements Screen {
     }
 
     void levelUp(){
-        tickTimeModifier = tickTimeModifier * 1.2f;
+        Ass.levelUpSound.play();
+        level +=1;
+        tickTimeModifier += level * 0.1f;
     }
 
     void drawGame(){
 
         batch.draw(game_sprite,  0,  0);
+
+        batch.draw(Ass.progressBar,0,20);
+        batch.draw(Ass.progressBarFrame,0,20);
 
         drawBlocks(grid, Ass.tetrisScreenGrid, 0, 0);
 
@@ -478,6 +507,13 @@ public class TetrisScreen implements Screen {
 
         Ass.font.setColor(Ass.black);
         Ass.font.draw(batch, Ass.myBundle.get("score") + ": " + score , x, y);
+
+    }
+
+    void drawLevel(int x, int y){
+
+        Ass.font.setColor(Ass.black);
+        Ass.font.draw(batch, Ass.myBundle.get("level") + ": " + level , x, y);
 
     }
 
