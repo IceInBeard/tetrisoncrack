@@ -40,7 +40,6 @@ public class TetrisScreen implements Screen {
     Vector3 touchPoint = new Vector3();
 
     OrthographicCamera cam;
-
     Sprite game_sprite, block_sprite;
 
     Game game;
@@ -55,7 +54,7 @@ public class TetrisScreen implements Screen {
 
     Random randomPieceGenerator;
 
-    // For the penguin animation (animation needs an elaspedTime variable
+    // For the penguin animation (animation needs an elaspedTime variable)
     Animation penguinAnimation;
     float elapsedTime;
 
@@ -81,6 +80,8 @@ public class TetrisScreen implements Screen {
         this.game = game;
         state = new PlayState();
 
+        // The magic thingamajigg that
+        // scales the game for different devices
         cam = new OrthographicCamera();
         cam.setToOrtho(false, 480, 800);
 
@@ -90,10 +91,13 @@ public class TetrisScreen implements Screen {
         block_sprite = new Sprite(Ass.blockTextureRegion);
         block_sprite.setPosition(0, 0);
 
+        // Penguin Animation
         penguinAnimation = new Animation(1f/4f, Ass.penguinAnimationRegion);
 
+        // Timer for the "ticking" of the game
         timeSinceLastTic = 0;
 
+        // Starts background music
         Ass.backgroundMusic.setLooping(true);
         Ass.backgroundMusic.play();
 
@@ -175,14 +179,18 @@ public class TetrisScreen implements Screen {
             elapsedTime += delta;
 
             if(pushed(Ass.gamePauseButton)){
+                // Pause button
                  state = new PauseState(PlayState.this);
             }
 
             if(pushed(Ass.gameTutorialButton)){
+                // Tutorial button (aka the penguin)
                 state = new tutorialState(PlayState.this);
             }
 
             if(currentPiece == null) {
+                // If there is no game piece in the game (in the beginning)
+                // Spawn pieces
                 spawnPieceOnGrid();
             }
 
@@ -198,6 +206,7 @@ public class TetrisScreen implements Screen {
             if(timeSinceLastTic >= TICK_TIME/tickTimeModifier){
                 // THIS IS WHERE THE TICK HAPPENS! PARTY!
                 if(!collidesWithGridOrWall(currentPiece.pieceGrid, currentPiece.x, currentPiece.y - 1)) {
+                    // Every tick - if it dosn't hit ground - move the piece down
                     currentPiece.movePieceDown();
                 }
                 else {
@@ -227,8 +236,6 @@ public class TetrisScreen implements Screen {
                 // Generate a new random number 0 to 6 (the different piecetypes)
                 randomPieceNumber = randomPieceGenerator.nextInt(7);
                 nextNextPiece = new tetrisPiece(randomPieceNumber);
-
-
             }
 
             // Generate a random number 0 to 6 (the different piecetypes)
@@ -240,6 +247,7 @@ public class TetrisScreen implements Screen {
         }
 
       void pieceToGrid(){
+          // the piece get merged into the grid
 
           Gdx.input.vibrate(100);
           Ass.pfffSound.play();
@@ -255,8 +263,9 @@ public class TetrisScreen implements Screen {
       }
 
           void clearRows() {
-              int rowsCleared = 0;
+              // Runs through the grid and clears full rows
 
+              int rowsCleared = 0;
               for (int i = 0; i < GRID_HEIGHT; ) {
                   boolean full = true;
 
@@ -280,6 +289,10 @@ public class TetrisScreen implements Screen {
                   }
 
               }
+
+              // Plays sounds when you score
+              // One bam for one row
+              // Bambambam for multirow
               if(rowsCleared == 1){
                   Ass.bamSound.play();
               }
@@ -288,21 +301,24 @@ public class TetrisScreen implements Screen {
                   Gdx.input.cancelVibrate();
                   Gdx.input.vibrate(500);
               }
+
+              // Gives score
               score += rowsCleared * rowsCleared * POINTS_PER_ROW;
 
               if(score>= 50*level ){
+                  // Level up once every 50 points
                   levelUp();
               }
 
+              // Controls the progressbar on the left of the screen
               barHeightPros = (float)(score-50*(level-1))/ 50f;
-
               if(barHeightPros >= 1.0){
                   barHeightPros -= 1.0;
               }
               barHeight = (int)(barHeightPros*670f);
 
-              Gdx.app.log("Height","Heightpros: " + barHeightPros);
-              Gdx.app.log("Height","Height: " + barHeight);
+              //Gdx.app.log("Height","Heightpros: " + barHeightPros);
+              //Gdx.app.log("Height","Height: " + barHeight);
               Ass.progressBar.setRegionHeight(barHeight);
 
 
@@ -316,6 +332,8 @@ public class TetrisScreen implements Screen {
         public PauseState(GameState returnState){
             this.returnState = returnState;
             Ass.backgroundMusic.pause();
+
+            // Play different sound based on language
             if(Ass.locale.getLanguage() == "en"){
                 Ass.toiletBreak.play();
             }else {
@@ -383,6 +401,8 @@ public class TetrisScreen implements Screen {
         String[] tutorialStrings;
 
         public tutorialState(GameState returnState){
+
+            // The tutorial with 3 different text
             this.returnState = returnState;
             tutorialStage = 0;
             tutorialStrings = new String[3];
@@ -479,6 +499,8 @@ public class TetrisScreen implements Screen {
     }
 
     void levelUp(){
+
+        // Should be fixed so it sets level based on points rather than increases level by one
         Ass.levelUpSound.play();
         level +=1;
         tickTimeModifier += level * 0.1f;
