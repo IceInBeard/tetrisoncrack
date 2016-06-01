@@ -1,9 +1,5 @@
 [
     {
-        "merged": "/Volumes/Storage/Git/tetrisoncrack/D:\\Git\\tetrisoncrack\\android\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_launcher.png",
-        "source": "/Volumes/Storage/Git/tetrisoncrack/D:\\Git\\tetrisoncrack\\android\\res\\drawable-hdpi\\ic_launcher.png"
-    },
-    {
         "merged": "/Volumes/Storage/Git/tetrisoncrack/android/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_launcher.png",
         "source": "/Volumes/Storage/Git/tetrisoncrack/android/res/drawable-hdpi/ic_launcher.png"
     }

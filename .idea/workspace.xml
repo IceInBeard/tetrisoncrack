@@ -5,59 +5,145 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35a1c85d-9e55-46f6-b354-c6b0e67feeb6" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/65262152805171/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/82490675454878/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/86205175370811/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/87691309901845/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/87759163939289/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/89235170961332/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/90163481548234/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/90209271923472/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/90310947533503/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/90403953796055/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/90727308073722/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/92033759337450/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/92051089892825/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/92082543000510/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/92477536024475/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/95226504572735/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/95240728411963/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/95259878281405/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/95268997911925/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/95667811923815/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/95769477963048/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/96033456413278/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/97130268362830/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/97398370144661/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/97464574092132/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/97655262375310/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/98177537386079/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/98431421764023/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/mygdx/tetrisoncrack/Ass$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/mygdx/tetrisoncrack/MenuScreen$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/mygdx/tetrisoncrack/SimpleDirectionGestureDetector$DirectionGestureListener$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/mygdx/tetrisoncrack/SimpleDirectionGestureDetector$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/mygdx/tetrisoncrack/TetrisOnCrack$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/mygdx/tetrisoncrack/TetrisScreen$1$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/mygdx/tetrisoncrack/TetrisScreen$GameOverState$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/mygdx/tetrisoncrack/TetrisScreen$PauseState$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/mygdx/tetrisoncrack/TetrisScreen$PlayState$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/mygdx/tetrisoncrack/TetrisScreen$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/mygdx/tetrisoncrack/TetrisScreen$tutorialState$override.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/buildId.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/mygdx/tetrisoncrack/AndroidLauncher.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/mygdx/tetrisoncrack/Ass.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/mygdx/tetrisoncrack/BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/mygdx/tetrisoncrack/MenuScreen.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/mygdx/tetrisoncrack/PauseScreen.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/mygdx/tetrisoncrack/R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/mygdx/tetrisoncrack/R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/mygdx/tetrisoncrack/R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/mygdx/tetrisoncrack/R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/mygdx/tetrisoncrack/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/mygdx/tetrisoncrack/SimpleDirectionGestureDetector$DirectionGestureListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/mygdx/tetrisoncrack/SimpleDirectionGestureDetector$DirectionListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/mygdx/tetrisoncrack/SimpleDirectionGestureDetector.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/mygdx/tetrisoncrack/TetrisOnCrack.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/mygdx/tetrisoncrack/TetrisScreen$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/mygdx/tetrisoncrack/TetrisScreen$GameOverState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/mygdx/tetrisoncrack/TetrisScreen$GameState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/mygdx/tetrisoncrack/TetrisScreen$PauseState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/mygdx/tetrisoncrack/TetrisScreen$PlayState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/mygdx/tetrisoncrack/TetrisScreen$tutorialState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/mygdx/tetrisoncrack/TetrisScreen.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/mygdx/tetrisoncrack/tetrisPiece.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/buildId.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_56nssfop75149te9365kbx987/com/mygdx/tetrisoncrack/Ass.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_56nssfop75149te9365kbx987/com/mygdx/tetrisoncrack/MenuScreen.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_56nssfop75149te9365kbx987/com/mygdx/tetrisoncrack/PauseScreen.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_56nssfop75149te9365kbx987/com/mygdx/tetrisoncrack/SimpleDirectionGestureDetector$DirectionGestureListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_56nssfop75149te9365kbx987/com/mygdx/tetrisoncrack/SimpleDirectionGestureDetector$DirectionListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_56nssfop75149te9365kbx987/com/mygdx/tetrisoncrack/SimpleDirectionGestureDetector.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_56nssfop75149te9365kbx987/com/mygdx/tetrisoncrack/TetrisOnCrack.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_56nssfop75149te9365kbx987/com/mygdx/tetrisoncrack/TetrisScreen$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_56nssfop75149te9365kbx987/com/mygdx/tetrisoncrack/TetrisScreen$GameOverState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_56nssfop75149te9365kbx987/com/mygdx/tetrisoncrack/TetrisScreen$GameState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_56nssfop75149te9365kbx987/com/mygdx/tetrisoncrack/TetrisScreen$PauseState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_56nssfop75149te9365kbx987/com/mygdx/tetrisoncrack/TetrisScreen$PlayState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_56nssfop75149te9365kbx987/com/mygdx/tetrisoncrack/TetrisScreen$tutorialState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_56nssfop75149te9365kbx987/com/mygdx/tetrisoncrack/TetrisScreen.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_56nssfop75149te9365kbx987/com/mygdx/tetrisoncrack/tetrisPiece.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_android_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_android_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_android_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_android_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_android_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_android_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/mygdx/tetrisoncrack/Ass.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/mygdx/tetrisoncrack/Ass.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-runtime-classes/debug/instant-run.jar" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-runtime-classes/debug/instant-run.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/mygdx/tetrisoncrack/MenuScreen.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/mygdx/tetrisoncrack/MenuScreen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/mygdx/tetrisoncrack/TetrisOnCrack.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/mygdx/tetrisoncrack/TetrisOnCrack.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/mygdx/tetrisoncrack/TetrisScreen$1.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/mygdx/tetrisoncrack/TetrisScreen$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/mygdx/tetrisoncrack/TetrisScreen$GameOverState.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/mygdx/tetrisoncrack/TetrisScreen$GameOverState.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/mygdx/tetrisoncrack/TetrisScreen$PauseState.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/mygdx/tetrisoncrack/TetrisScreen$PauseState.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/mygdx/tetrisoncrack/TetrisScreen$PlayState.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/mygdx/tetrisoncrack/TetrisScreen$PlayState.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/mygdx/tetrisoncrack/TetrisScreen$tutorialState.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/mygdx/tetrisoncrack/TetrisScreen$tutorialState.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/mygdx/tetrisoncrack/TetrisScreen.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/mygdx/tetrisoncrack/TetrisScreen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/instant-run-support/debug/classes.zip" afterPath="$PROJECT_DIR$/android/build/intermediates/instant-run-support/debug/classes.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/instant-run-support/debug/resources.zip" afterPath="$PROJECT_DIR$/android/build/intermediates/instant-run-support/debug/resources.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/android/build/intermediates/res/resources-debug-androidTest.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/android/build/intermediates/res/resources-debug.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-2020227109/com/mygdx/tetrisoncrack/Ass.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-2020227109/com/mygdx/tetrisoncrack/Ass.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-2020227109/com/mygdx/tetrisoncrack/MenuScreen.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-2020227109/com/mygdx/tetrisoncrack/MenuScreen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-2020227109/com/mygdx/tetrisoncrack/TetrisOnCrack.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-2020227109/com/mygdx/tetrisoncrack/TetrisOnCrack.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-2020227109/com/mygdx/tetrisoncrack/TetrisScreen$1.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-2020227109/com/mygdx/tetrisoncrack/TetrisScreen$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-2020227109/com/mygdx/tetrisoncrack/TetrisScreen$GameOverState.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-2020227109/com/mygdx/tetrisoncrack/TetrisScreen$GameOverState.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-2020227109/com/mygdx/tetrisoncrack/TetrisScreen$PauseState.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-2020227109/com/mygdx/tetrisoncrack/TetrisScreen$PauseState.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-2020227109/com/mygdx/tetrisoncrack/TetrisScreen$PlayState.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-2020227109/com/mygdx/tetrisoncrack/TetrisScreen$PlayState.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-2020227109/com/mygdx/tetrisoncrack/TetrisScreen$tutorialState.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-2020227109/com/mygdx/tetrisoncrack/TetrisScreen$tutorialState.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-2020227109/com/mygdx/tetrisoncrack/TetrisScreen.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-2020227109/com/mygdx/tetrisoncrack/TetrisScreen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/tetrisoncrack/Ass.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/tetrisoncrack/Ass.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/tetrisoncrack/MenuScreen.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/tetrisoncrack/MenuScreen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/tetrisoncrack/TetrisOnCrack.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/tetrisoncrack/TetrisOnCrack.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/tetrisoncrack/TetrisScreen$1.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/tetrisoncrack/TetrisScreen$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/tetrisoncrack/TetrisScreen$GameOverState.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/tetrisoncrack/TetrisScreen$GameOverState.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/tetrisoncrack/TetrisScreen$PauseState.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/tetrisoncrack/TetrisScreen$PauseState.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/tetrisoncrack/TetrisScreen$PlayState.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/tetrisoncrack/TetrisScreen$PlayState.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/tetrisoncrack/TetrisScreen$tutorialState.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/tetrisoncrack/TetrisScreen$tutorialState.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/tetrisoncrack/TetrisScreen.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mygdx/tetrisoncrack/TetrisScreen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/mygdx/tetrisoncrack/Ass$override.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/mygdx/tetrisoncrack/Ass$override.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/mygdx/tetrisoncrack/TetrisScreen$1$override.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/mygdx/tetrisoncrack/TetrisScreen$1$override.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/mygdx/tetrisoncrack/TetrisScreen$GameOverState$override.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/mygdx/tetrisoncrack/TetrisScreen$GameOverState$override.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/mygdx/tetrisoncrack/TetrisScreen$PauseState$override.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/mygdx/tetrisoncrack/TetrisScreen$PauseState$override.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/mygdx/tetrisoncrack/TetrisScreen$PlayState$override.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/mygdx/tetrisoncrack/TetrisScreen$PlayState$override.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/mygdx/tetrisoncrack/TetrisScreen$override.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/mygdx/tetrisoncrack/TetrisScreen$override.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/mygdx/tetrisoncrack/TetrisScreen$tutorialState$override.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/mygdx/tetrisoncrack/TetrisScreen$tutorialState$override.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/mygdx/tetrisoncrack/Ass.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/mygdx/tetrisoncrack/Ass.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/mygdx/tetrisoncrack/MenuScreen.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/mygdx/tetrisoncrack/MenuScreen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/mygdx/tetrisoncrack/TetrisOnCrack.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/mygdx/tetrisoncrack/TetrisOnCrack.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/mygdx/tetrisoncrack/TetrisScreen$1.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/mygdx/tetrisoncrack/TetrisScreen$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/mygdx/tetrisoncrack/TetrisScreen$GameOverState.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/mygdx/tetrisoncrack/TetrisScreen$GameOverState.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/mygdx/tetrisoncrack/TetrisScreen$PauseState.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/mygdx/tetrisoncrack/TetrisScreen$PauseState.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/mygdx/tetrisoncrack/TetrisScreen$PlayState.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/mygdx/tetrisoncrack/TetrisScreen$PlayState.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/mygdx/tetrisoncrack/TetrisScreen$tutorialState.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/mygdx/tetrisoncrack/TetrisScreen$tutorialState.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/mygdx/tetrisoncrack/TetrisScreen.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/mygdx/tetrisoncrack/TetrisScreen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_36glyocm36n97s7x4l2j7sx1p/com/mygdx/tetrisoncrack/Ass.class" afterPath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_36glyocm36n97s7x4l2j7sx1p/com/mygdx/tetrisoncrack/Ass.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/outputs/apk/android-debug-unaligned.apk" afterPath="$PROJECT_DIR$/android/build/outputs/apk/android-debug-unaligned.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/outputs/apk/android-debug.apk" afterPath="$PROJECT_DIR$/android/build/outputs/apk/android-debug.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_36glyocm36n97s7x4l2j7sx1p/com/mygdx/tetrisoncrack/MenuScreen.class" afterPath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_36glyocm36n97s7x4l2j7sx1p/com/mygdx/tetrisoncrack/MenuScreen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_36glyocm36n97s7x4l2j7sx1p/com/mygdx/tetrisoncrack/TetrisOnCrack.class" afterPath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_36glyocm36n97s7x4l2j7sx1p/com/mygdx/tetrisoncrack/TetrisOnCrack.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_36glyocm36n97s7x4l2j7sx1p/com/mygdx/tetrisoncrack/TetrisScreen$1.class" afterPath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_36glyocm36n97s7x4l2j7sx1p/com/mygdx/tetrisoncrack/TetrisScreen$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_36glyocm36n97s7x4l2j7sx1p/com/mygdx/tetrisoncrack/TetrisScreen$GameOverState.class" afterPath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_36glyocm36n97s7x4l2j7sx1p/com/mygdx/tetrisoncrack/TetrisScreen$GameOverState.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_36glyocm36n97s7x4l2j7sx1p/com/mygdx/tetrisoncrack/TetrisScreen$PauseState.class" afterPath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_36glyocm36n97s7x4l2j7sx1p/com/mygdx/tetrisoncrack/TetrisScreen$PauseState.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_36glyocm36n97s7x4l2j7sx1p/com/mygdx/tetrisoncrack/TetrisScreen$PlayState.class" afterPath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_36glyocm36n97s7x4l2j7sx1p/com/mygdx/tetrisoncrack/TetrisScreen$PlayState.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_36glyocm36n97s7x4l2j7sx1p/com/mygdx/tetrisoncrack/TetrisScreen$tutorialState.class" afterPath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_36glyocm36n97s7x4l2j7sx1p/com/mygdx/tetrisoncrack/TetrisScreen$tutorialState.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_36glyocm36n97s7x4l2j7sx1p/com/mygdx/tetrisoncrack/TetrisScreen.class" afterPath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_36glyocm36n97s7x4l2j7sx1p/com/mygdx/tetrisoncrack/TetrisScreen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/com/mygdx/tetrisoncrack/Ass.class" afterPath="$PROJECT_DIR$/core/build/classes/main/com/mygdx/tetrisoncrack/Ass.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/com/mygdx/tetrisoncrack/MenuScreen.class" afterPath="$PROJECT_DIR$/core/build/classes/main/com/mygdx/tetrisoncrack/MenuScreen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/com/mygdx/tetrisoncrack/TetrisOnCrack.class" afterPath="$PROJECT_DIR$/core/build/classes/main/com/mygdx/tetrisoncrack/TetrisOnCrack.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/com/mygdx/tetrisoncrack/TetrisScreen$1.class" afterPath="$PROJECT_DIR$/core/build/classes/main/com/mygdx/tetrisoncrack/TetrisScreen$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/com/mygdx/tetrisoncrack/TetrisScreen$GameOverState.class" afterPath="$PROJECT_DIR$/core/build/classes/main/com/mygdx/tetrisoncrack/TetrisScreen$GameOverState.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/com/mygdx/tetrisoncrack/TetrisScreen$PauseState.class" afterPath="$PROJECT_DIR$/core/build/classes/main/com/mygdx/tetrisoncrack/TetrisScreen$PauseState.class" />
@@ -66,17 +152,18 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/classes/main/com/mygdx/tetrisoncrack/TetrisScreen.class" afterPath="$PROJECT_DIR$/core/build/classes/main/com/mygdx/tetrisoncrack/TetrisScreen.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/build/libs/core-1.0.jar" afterPath="$PROJECT_DIR$/core/build/libs/core-1.0.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/assets/MyBundle.properties" afterPath="$PROJECT_DIR$/android/assets/MyBundle.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/assets/MyBundle_en.properties" afterPath="$PROJECT_DIR$/android/assets/MyBundle_en.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/assets/MyBundle_sv.properties" afterPath="$PROJECT_DIR$/android/assets/MyBundle_sv.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/MyBundle.properties" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/MyBundle.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/MyBundle_en.properties" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/MyBundle_en.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/MyBundle_sv.properties" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/MyBundle_sv.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/blame/res/debug/multi/values.json" afterPath="$PROJECT_DIR$/android/build/intermediates/blame/res/debug/multi/values.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" afterPath="$PROJECT_DIR$/android/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/blame/res/debug/single/drawable-mdpi-v4.json" afterPath="$PROJECT_DIR$/android/build/intermediates/blame/res/debug/single/drawable-mdpi-v4.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/blame/res/debug/single/drawable-xhdpi-v4.json" afterPath="$PROJECT_DIR$/android/build/intermediates/blame/res/debug/single/drawable-xhdpi-v4.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/blame/res/debug/single/drawable-xxhdpi-v4.json" afterPath="$PROJECT_DIR$/android/build/intermediates/blame/res/debug/single/drawable-xxhdpi-v4.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/mergeDebugAssets/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/instant-run-support/debug/reload-changes.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/instant-run-support/debug/reload-changes.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/restart-dex/debug/build-info.xml" afterPath="$PROJECT_DIR$/android/build/intermediates/restart-dex/debug/build-info.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/buildId.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/buildId.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/mygdx/tetrisoncrack/Ass.java" afterPath="$PROJECT_DIR$/core/src/com/mygdx/tetrisoncrack/Ass.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/mygdx/tetrisoncrack/MenuScreen.java" afterPath="$PROJECT_DIR$/core/src/com/mygdx/tetrisoncrack/MenuScreen.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/mygdx/tetrisoncrack/SimpleDirectionGestureDetector.java" afterPath="$PROJECT_DIR$/core/src/com/mygdx/tetrisoncrack/SimpleDirectionGestureDetector.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/mygdx/tetrisoncrack/TetrisOnCrack.java" afterPath="$PROJECT_DIR$/core/src/com/mygdx/tetrisoncrack/TetrisOnCrack.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/mygdx/tetrisoncrack/TetrisScreen.java" afterPath="$PROJECT_DIR$/core/src/com/mygdx/tetrisoncrack/TetrisScreen.java" />
     </list>
     <ignored path="tetrisoncrack.iws" />
@@ -101,8 +188,8 @@
       <file leaf-file-name="TetrisScreen.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/tetrisoncrack/TetrisScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33150685">
-              <caret line="297" column="59" selection-start-line="297" selection-start-column="59" selection-end-line="297" selection-end-column="59" />
+            <state vertical-scroll-proportion="0.34438777">
+              <caret line="83" column="39" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,10 +201,8 @@
         <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/tetrisoncrack/SimpleDirectionGestureDetector.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -138,9 +223,11 @@
       <file leaf-file-name="Ass.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/tetrisoncrack/Ass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.111111">
-              <caret line="79" column="24" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="24" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -149,7 +236,7 @@
         <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/tetrisoncrack/MenuScreen.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="64" column="47" selection-start-line="64" selection-start-column="15" selection-end-line="64" selection-end-column="47" />
+              <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -158,8 +245,8 @@
       <file leaf-file-name="TetrisOnCrack.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/tetrisoncrack/TetrisOnCrack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.5555553">
-              <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -3530,15 +3617,15 @@
         <option value="$PROJECT_DIR$/core/src/com/mygdx/tetrisoncrack/GameState.java" />
         <option value="$PROJECT_DIR$/desktop/src/com/mygdx/tetrisoncrack/desktop/DesktopLauncher.java" />
         <option value="$PROJECT_DIR$/android/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/core/src/com/mygdx/tetrisoncrack/MenuScreen.java" />
-        <option value="$PROJECT_DIR$/core/src/com/mygdx/tetrisoncrack/TetrisOnCrack.java" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/tetrisoncrack/tetrisPiece.java" />
-        <option value="$PROJECT_DIR$/core/src/com/mygdx/tetrisoncrack/SimpleDirectionGestureDetector.java" />
         <option value="$PROJECT_DIR$/android/assets/MyBundle_sv.properties" />
         <option value="$PROJECT_DIR$/android/assets/MyBundle_en.properties" />
         <option value="$PROJECT_DIR$/android/assets/MyBundle.properties" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/tetrisoncrack/Ass.java" />
         <option value="$PROJECT_DIR$/core/src/com/mygdx/tetrisoncrack/TetrisScreen.java" />
+        <option value="$PROJECT_DIR$/core/src/com/mygdx/tetrisoncrack/SimpleDirectionGestureDetector.java" />
+        <option value="$PROJECT_DIR$/core/src/com/mygdx/tetrisoncrack/MenuScreen.java" />
+        <option value="$PROJECT_DIR$/core/src/com/mygdx/tetrisoncrack/TetrisOnCrack.java" />
       </list>
     </option>
   </component>
@@ -3572,19 +3659,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -3619,13 +3693,26 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="device.picker.selection" value="fa1c5fba" />
+    <property name="device.picker.selection" value="Nexus_5_API_22" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="104" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="101" />
@@ -4016,7 +4103,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32971296" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1987076" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22727273" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22605966" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -4030,14 +4117,14 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27943486" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32738557" sideWeight="0.50284785" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32971296" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24151857" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22762951" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -4081,9 +4168,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4107,7 +4191,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="132" column="0" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -4115,9 +4201,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4161,7 +4244,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="71" column="65" selection-start-line="71" selection-start-column="65" selection-end-line="71" selection-end-column="65" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -4169,9 +4254,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4205,7 +4287,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="71" column="65" selection-start-line="71" selection-start-column="65" selection-end-line="71" selection-end-column="65" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -4213,9 +4297,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4267,7 +4348,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="74" selection-start-line="25" selection-start-column="74" selection-end-line="25" selection-end-column="74" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -4301,7 +4384,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -4419,16 +4504,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23385301">
           <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/tetrisoncrack/TetrisOnCrack.java">
+    <entry file="file://$PROJECT_DIR$/android/assets/MyBundle_sv.properties">
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.5555553">
-          <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+        <state vertical-scroll-proportion="-2.0689654">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/assets/MyBundle_en.properties">
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0689654">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/assets/MyBundle.properties">
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16528925">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/tetrisoncrack/SimpleDirectionGestureDetector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -4436,48 +4548,23 @@
     <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/tetrisoncrack/MenuScreen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="64" column="47" selection-start-line="64" selection-start-column="15" selection-end-line="64" selection-end-column="47" />
+          <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/android/assets/MyBundle_sv.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0689654">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android/assets/MyBundle_en.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0689654">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android/assets/MyBundle.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16528925">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/tetrisoncrack/SimpleDirectionGestureDetector.java">
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/tetrisoncrack/TetrisOnCrack.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/tetrisoncrack/Ass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -4495,18 +4582,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/tetrisoncrack/Ass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.111111">
-          <caret line="79" column="24" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/com/mygdx/tetrisoncrack/TetrisScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33150685">
-          <caret line="297" column="59" selection-start-line="297" selection-start-column="59" selection-end-line="297" selection-end-column="59" />
+        <state vertical-scroll-proportion="0.34438777">
+          <caret line="83" column="39" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
